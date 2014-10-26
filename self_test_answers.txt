@@ -1,0 +1,23 @@
+Q1: Bytecode is the output of the JAVA compiler (.class files). 
+This code is portable and can work on all environments that are supported by a JVM.
+
+Q2: Encapsulation: Code and data are encapsulated in an object - access to said object is controlled.
+Inheritance: An object can acquire the properties of another object
+Polymorphism: Designing a generic interface for a group of related activities
+
+Q3: In the "public static void main( String[] args ){ .. }" method. This must be encapsulated within a class.
+
+Q4: A variable is an identifier that holds data.
+
+Q5: Variable D is invalid ( "67count" )
+
+Q6: Two leading forward slashes // This is a single line comment, mkay
+
+Q7: if ( condition ) statement; (More usually in block form with braces)
+
+Q8: Use curly braces to create blocks {}
+
+Q11: A syntax error
+
+Q12: No, from the Java compilers PoV it doesn't matter where on a line you put a statement, 
+but there are obviously formatting guidelines which mean your code is more readable to other humans. 
