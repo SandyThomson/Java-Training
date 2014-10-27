@@ -1,0 +1,27 @@
+1) Byte code is a low-level, hardware-agnostic instruction set that is executed by the JVM.
+
+2) Encapsulation, Polymorphism Inheritance
+
+3) main()
+
+4) A term that can store a value
+
+5) D
+
+6) // Single comment
+
+/* 
+ * Multi line comment
+ */
+ 
+7) if ( condition ) { operation }
+
+for ( counter; condition; increment ) { ... }
+
+8) Curly braces
+
+9 & 10) See code examples
+
+11) Syntax error
+
+12) No
