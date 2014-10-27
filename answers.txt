@@ -1,0 +1,27 @@
+Chapter 1
+
+1.  Bytecode is the output of the Java compiler which is designed to be executed by the JVM. It is key to Java's use for Internet programming because it allows Java programs to be portable in that they can be run on any computer with a JVM installed.
+
+2.  The three main principles are:
+ - Encapsulation: where code and data are bound together and access/modification is controlled. 
+ - Polymorphism: where one interface can specify a general type of action across many types.
+ - Inheritance: where one object can acquire the properties and/or behaviour of another object.
+ 
+3.  Java programs begin execution in the main() function.
+
+4.  A variable is an identifier which holds a value.
+
+5.  D.  67count is invalid as a variable name cannot start with a number.
+
+6.  You can create a single line comment using the // characters. Multi-line comments are enclosed within the /* <comment> */ characters.
+
+7.  IF:  if (<condition>) <statement>;
+	FOR: for (<initialisation>; <condition>; <iteration>) <statement>;
+	
+8.  You create a block of code by placing it within the {} characters. 
+
+9/10.  See code examples.
+
+11. Syntax Error.
+
+12. No.  
