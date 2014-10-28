@@ -1,0 +1,25 @@
+1. bytecode is what java get compiled into. It allows java to be so portable.
+2. encapsualtion, polymorphism, inherritance.
+3. At a main method asking for an array of arguments.
+4. A part of memory that can store a value.
+5. d
+6. 
+// single line comment
+/*
+ *  multi line comment with optional extra '*'
+ */
+ 7. if( condition ){
+		blarg;
+	}
+	else if( condition ){
+		blarg;
+	}
+	else{
+		honk;
+	}
+	
+	for( declare variable; condition to run on variable at beginning of loop; alter variable at end of loop ){
+		blarg;
+	}
+8. { block of code }
+ 
