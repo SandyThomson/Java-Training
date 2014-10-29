@@ -1,0 +1,29 @@
+01. Bytecode is highly optimised instructions designed to be executed by the JVM
+
+02. Encapsulation, Polymorphism and Inheritance
+
+03. In the main method
+
+04. A variable is a named memory location that can be assigned a value.
+
+05. D 67count (identifiers can't begin with a digit)
+
+06. // This is a single line comment
+
+   /* This is a
+      multi-line
+	  comment */
+
+07. if(condition) statement;
+
+   for(initialisation, condition, iteration) statement;
+
+08. Blocks are created by enclosed statements within curly braces.
+
+09. See code example
+
+10. See code example.
+
+11. A syntax error.
+
+12. Nope.
