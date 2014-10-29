@@ -1,0 +1,41 @@
+1.  Bytecode is the product of the Java compiler.  It is a hardware-agnostic optimised
+    version of the Java code, ready for execution by the JVM.  It's important in the
+    context of Internet programming because it is portable and provides a relatively
+    high level of security.
+
+2.  The three main principles of OOP are:
+      Encapsulation:
+        Data and the code which acts upon it are bundled together into a single object.
+      Polymorphism:
+        The same interface may be used to interact with multiple objects of different types.
+      Inheritance:
+        An object may adopt the properties of another object without explicitly defining them.
+
+3.  Java programs begin execution with the main() method.
+
+4.  A variable is a name for a memory location which can be assigned a value.
+
+5.  "67count" is not a valid variable name - they must not start with a number.
+
+6.  // This is a single-line comment
+
+    /*
+      This is a
+      multi-line
+      comment
+    */
+
+7.  a) if ( condition ) { statement(s) }
+    b) for ( initialisation; condition; iteration ) { statement(s) }
+
+8.  A block of code is enclosed in braces
+
+9.  See WeightOnMoon.java
+
+10. See InchesToMetresTable.java
+
+11. A typing error while entering a program will result in a syntax error.
+
+12. Functionally, it does not matter where on a line you put a statement, so long
+    as it is correctly terminated.  However, consistently indented code is significantly
+    more human-readable and easier to maintain so it's a good idea.
