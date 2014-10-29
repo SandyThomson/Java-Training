@@ -25,28 +25,41 @@ Only D, though B doesn't follow Java naming conventions.
 
 # 6
 
-Single line comment with a double forward slash, like this //
+Single line comment with a double forward slash, like this `//`
 Multiline comment with a slash-asterisk asterisk-slash pair, like:
+
+```java
 /*
 	Cooooommmmmeeeeeent.
 */
+```
 
 # 7
 
 If:
+
+```java
 if ( condition )
 	statement ;
+```
 
 For:
+
+```java
 for( initialization ; condition ; iteration )
 	statement ;
+```
 
 # 8
 
-Using curly braces, like this: {
+Using curly braces, like this: 
+
+```java
+{
  doSomething();
  doAnotherThing();
 }
+```
 
 # 9
 
