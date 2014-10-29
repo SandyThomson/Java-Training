@@ -10,19 +10,19 @@ import java.text.DecimalFormat;
  *
  */
 public class Convertor {
+	
 	double ratio = 1.0;
 	
-	public void setRatio( double ratio ) {
+	/**
+	 * @param ratio
+	 */
+	public Convertor(double ratio) {
+		super();
 		this.ratio = ratio;
 	}
 	
-	public double convert( double input ) {
-		return (input * ratio);
-	
-	}
-	
-	public String convertAndFormat( double input ) {
-		double output = this.convert( input );
+	public String convert( double input ) {
+		double output = (input * ratio);
 
 		DecimalFormat df = new DecimalFormat("0.00");
 		

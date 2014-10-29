@@ -21,7 +21,7 @@ public class WeightOnTheMoonTest {
 	public void testMainWithNormalIntegerReturnsAccurateWeight() throws IOException {
 		// Arrange
 		String[] input = { "100" };
-		String expected = "Your weight would be 83.0kg on the moon.\n";
+		String expected = "Your weight would be 83.00kg on the moon.\n";
 		
 		final ByteArrayOutputStream myOut = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(myOut));
@@ -38,7 +38,7 @@ public class WeightOnTheMoonTest {
 	public void testMainWithNormalDoubleReturnsAccurateWeight() throws IOException {
 		// Arrange
 		String[] input = { "71.8" };
-		String expected = "Your weight would be 59.6kg on the moon.\n";
+		String expected = "Your weight would be 59.59kg on the moon.\n";
 		
 		final ByteArrayOutputStream myOut = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(myOut));

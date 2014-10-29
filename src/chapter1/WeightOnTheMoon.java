@@ -3,8 +3,6 @@
  */
 package chapter1;
 
-import java.text.DecimalFormat;
-
 /**
  * @author fitzretsil
  *
@@ -18,14 +16,11 @@ public class WeightOnTheMoon {
 		try {
 			double weightOnEarth = Double.parseDouble(args[0]);
 			
-			Convertor EarthWeightToMoonWeightConvertor = new Convertor();
-			EarthWeightToMoonWeightConvertor.setRatio(0.83);
+			Convertor EarthWeightToMoonWeightConvertor = new Convertor(0.83);
 						
-			double weightOnMoon = EarthWeightToMoonWeightConvertor.convert(weightOnEarth);
-			
-			DecimalFormat df = new DecimalFormat("#.0");
-			
-			System.out.println("Your weight would be " + df.format(weightOnMoon) + "kg on the moon.");
+			String weightOnMoon = EarthWeightToMoonWeightConvertor.convert(weightOnEarth);
+						
+			System.out.println("Your weight would be " + weightOnMoon + "kg on the moon.");
 		} catch (NumberFormatException e) {
 			System.out.println("Please provide your weight in kgs numerically.");
 		}

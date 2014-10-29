@@ -15,10 +15,27 @@ import org.junit.Test;
  * @author fitzretsil
  *
  */
-public class GalToLitTableTest {
+public class GallonsToLitresTest {
 
 	@Test
-	public void testMain() throws IOException {
+	public void testMainSingle() throws IOException {
+		// Arrange
+		String expected = "10.0 gallons is 37.85 liters.\n";
+		
+		final ByteArrayOutputStream myOut = new ByteArrayOutputStream();
+		System.setOut(new PrintStream(myOut));
+
+		//Act
+		String[] args = { "10" };
+		GallonsToLitres.main(args);
+		final String actual = myOut.toString();
+		
+		// Assert
+		assertEquals( expected, actual );
+	}
+	
+	@Test
+	public void testMainRange() throws IOException {
 		// Arrange
 		String expected = "1.0 gallons is 3.7854 liters.\n" +
 				"2.0 gallons is 7.5708 liters.\n" +
@@ -58,7 +75,8 @@ public class GalToLitTableTest {
 		System.setOut(new PrintStream(myOut));
 
 		//Act
-		GalToLitTable.main(null);
+		String[] args = { "1", "30" };
+		GallonsToLitres.main(args);
 		final String actual = myOut.toString();
 		
 		// Assert
