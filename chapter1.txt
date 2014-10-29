@@ -1,0 +1,30 @@
+1) Bytecode is the set of instructions run by the Java Virtual Machine. It alows Java to be run on a wide array of systems as only the JVM needs to be developed for each system, which allows Java programs to easily proliferate around the Web.
+
+2) Encapsulation, polymorphism and Inheritance
+
+3) In the main method
+
+4) A variable is a named memory location that can be assigned a value
+
+5) D - variables names cannot start with a number
+
+6) 
+// A single-line comment starts with double forward slashes
+/* A mutli-line comment starts with a forward slash and asterisk
+  and ends with the same */
+
+7) 
+if ( condition ) {
+  statement;
+}
+
+for ( initialization; condition; iteration ) {
+  statement;
+}
+
+8)
+{ A block of code is surrounded by curly brackets }
+
+11) Typos lead to syntax errors
+
+12) Statements can be anywhere on a line, but indented formatting it preferred for easy reading.
