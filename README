@@ -1,0 +1,30 @@
+1. bytecode is what java get compiled into. It allows java to be so portable.
+2. encapsulation, polymorphism, inheritance.
+3. At a main method asking for an array of arguments.
+4. A part of memory that can store a value.
+5. d
+6. 
+// single line comment
+/*
+ *  multi line comment with optional extra '*'
+ */
+ 7. if( condition ){
+		blarg;
+	}
+	else if( condition ){
+		blarg;
+	}
+	else{
+		honk;
+	}
+	
+	for( declare variable; condition to run on variable at beginning of loop; alter variable at end of loop ){
+		blarg;
+	}
+8. { block of code }
+9. GravityCalc.java
+10. IncToMetTable.java
+11. Depends on what you wrote.
+	You can end up with a syntax error if you mistype a variable or add characters in the wrong places.
+	Or the program could still run but just not give you the output you were expecting.
+12. No, there is no white space or formatting restrictions in java.
