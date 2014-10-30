@@ -83,10 +83,10 @@ public class GravityCalculator {
 
 		//Test weight in kilos
 		double weightInKilos = 80.00;
-		System.out.println( weightInKilos + " Kg is effectively " + df.format( gravityCalc.calculateEffectiveWeighKilos( weightInKilos ) ) + " Kg on the Moon." );
+		System.out.println( weightInKilos + " kg is effectively " + df.format( gravityCalc.calculateEffectiveWeighKilos( weightInKilos ) ) + "kg on the Moon." );
 
 		double weightInLbs = 176.37;
-		System.out.println( weightInLbs + " lbs is effectively " + df.format( gravityCalc.calculateEffectiveWeightLbs( weightInLbs ) ) + " lbs on the Moon." );
+		System.out.println( weightInLbs + " lbs is effectively " + df.format( gravityCalc.calculateEffectiveWeightLbs( weightInLbs ) ) + "lbs on the Moon." );
 
 	}
 
