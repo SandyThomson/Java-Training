@@ -11,9 +11,8 @@ import java.text.DecimalFormat;
 public class GravityCalculator {
 
 	private double gravityFactor; //The gravity factor to be used
+	private MeasurementConverter converter; //The measurement converter to use
 	
-	private final double lbsToKilosRatio = 0.453592; //ratio of lbs to kilos
-
 	/**
 	 * Constructor to setup the Gravity Calculator
 	 * 
@@ -21,6 +20,9 @@ public class GravityCalculator {
 	 */
 	public GravityCalculator( double defaultFactor ) {
 		setGravityFactor( defaultFactor );
+		
+		//Setup the measurement converter
+		this.converter = new MeasurementConverter();
 	}
 
 	/**
@@ -30,23 +32,14 @@ public class GravityCalculator {
 	 * @return effective weight in kilos
 	 */
 	public double calculateEffectiveWeighKilos( double weightKilos ) {
-		return convert( weightKilos, getGravityFactor() );
+		
+		return converter.convert( weightKilos, getGravityFactor() );
 	}
 
 	public double calculateEffectiveWeightLbs( double weightLbs ) {
-		return convert( weightLbs, gravityFactor );
+		return converter.convert( weightLbs, gravityFactor );
 	}
 
-	/**
-	 * Private helper class to apply a ration to a value
-	 * 
-	 * @param value
-	 * @param ratio
-	 * @return the value multplied by the ratio
-	 */
-	private double convert( double value, double ratio ) {
-		return value * ratio;
-	}
 
 	/**
 	 * Getter for Gravity Factor
