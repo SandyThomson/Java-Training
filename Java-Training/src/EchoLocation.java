@@ -2,8 +2,6 @@
  * Try this 2-1.6
  */
 
-import java.util.concurrent.TimeUnit;
-
 public class EchoLocation {
 	
 	public static void main ( String[] args ) {
