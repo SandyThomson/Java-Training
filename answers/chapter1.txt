@@ -1,0 +1,13 @@
+1. Bytecode is what Java is compiled into and what is run on the JVM as the java application
+2. Encapsulation; Polymorphism and Inheritance
+3. The "main" method of the specified class
+4. A variable is a specific value stored in memory that can be accessed and updated by the java application
+5. D, variables can't start with digits
+6. like so // and like so /*
+7a. if ( i < j ) { do stuff; }
+7b. for ( i = 0; i < j; i++ ) { do stuff; }
+8. { chan putting it between curly braces tho }
+9. See WeightOnMoon
+10. see InchestoMeters
+11. Syntax Error
+12. Nope
