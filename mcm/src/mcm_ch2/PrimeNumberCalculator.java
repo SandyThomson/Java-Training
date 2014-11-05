@@ -11,7 +11,7 @@ public class PrimeNumberCalculator {
 	 */
 	public static void calculatePrimeNumbers(long start, long end){
 	
-		System.out.println("The first "+(end++)+" prime number are:");
+		System.out.println( "The first " + (end++) + " prime numbers are:" );
 		//Uses Java 8's snazzy new lambda expressions to figure out the prime numbers between a range
 		//No idea how efficient these are, just using them to see how they work really
 		LongStream.range(start, end++).forEach(
@@ -25,6 +25,7 @@ public class PrimeNumberCalculator {
 				}});
 	}
 	
+
 	/**
 	 * Main method to run the prime number calculator
 	 * @param args
@@ -33,7 +34,7 @@ public class PrimeNumberCalculator {
 		
 		//Calculate the prime numbers and at the same time
 		//See how hot my Macbook Pro can get
-		calculatePrimeNumbers(1, 999999999999999L);
+		calculatePrimeNumbers( 1, 9999999999999L );
 		
 		//IT BURNS - OUCH!!!
 	}
