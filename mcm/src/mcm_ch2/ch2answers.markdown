@@ -1,5 +1,6 @@
 
 # Java A beginner's guide - chapter 2 Answers
+*(Markdown doc - best viewed on GitHub)*
 
 **Q1** Java variables are strongly types to promote compatibility, help prevent errors and increase reliability.
 
@@ -53,6 +54,10 @@
 **Q9** Casts are generally required to convert one object type to another. Some automatic casting can take place, but this is generally only widening, e.g., a short to an int and so on.
 
 **Q10** See Code
+
+**Q11** The use of redundant parentheses should not affect performance.
+
+**Q12** Blocks do define scope.
 
 	
 
