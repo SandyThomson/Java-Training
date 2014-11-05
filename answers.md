@@ -3,9 +3,9 @@
    1) Java strictly specifies the range and behaviour of primitive types to
       preserve portability across different hardware.
    
-   2) Java's character type is unicode (UTF8 for single values, interestingly UTF16 for
-      arrays and Strings to guarantee fixed-width contiguous memory usage).
-      This differs from some other languages that typically use fixed-width 8
+   2) Java's character type is unicode (in UTF-16 format, allowing `char`s to be composed of 2 UTF-16 characters when
+      character codes outside the 16 bit range are required; for arrays and Strings, this allows fixed-width
+      contiguous memory usage). This differs from some other languages that typically use fixed-width 8
       bit characters.
       
    3) False, a boolean value can only be assigned true/false literals, or the result of
