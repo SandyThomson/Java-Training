@@ -1,4 +1,5 @@
 /bin/
-/.settings/
-/.classpath
+/mcm/bin/
+/mcm/.settings/
+/mcm/.classpath
 
