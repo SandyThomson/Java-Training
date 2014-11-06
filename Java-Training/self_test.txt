@@ -1,0 +1,26 @@
+1) Primitive types are strictly defined so that their behaviour is consistent over all Java platforms.
+
+2) The character type stores the code point value of a single character. It differs from some languages as it
+  uses UTF8 instead of ascii for i18n.
+  
+3) If everything was as good as Perl this would be true. But sadly it's false.
+
+4) System.out.println( "One\nTwo\nThree" );
+
+5) 'i' doesn't appear to be declared as an int, but the bigger problem is that sum is being redeclared  
+  each loop iteration so won't preserve the sum. It's also not initialised to some value, so presumably
+  Java would complain about that too.
+
+6) Prefix increments the variable before using it, postfix uses the variable and then increments it.
+
+7) if ( d != 0 && ( n % d ) == 0 ) { ... }
+
+8) Bytes and shorts are promoted to int.
+
+9) Casts are needed when reducing a type to a shorter one, such as a double to a float.
+
+10) Programming question
+
+11) No, parentheses usually they make things easier to read.
+
+12) Blocks do define scopes.
