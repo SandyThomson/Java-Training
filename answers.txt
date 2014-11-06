@@ -1,0 +1,23 @@
+1) In order to make programs portable
+
+2) Java characters are unicode characters
+
+3) False
+
+4) System.out.println( "One\nTwo\nThree\n" );
+
+5) Sum is not defined withint the scope of the println command
+
+6) the prefix form will increment the value then evaluate the expression (i.e. you will get the incremented value), while postfix will do the reverse (i.e. it will first return the value then increment)
+
+7) if ( a > 0 && (b/a) == c ) { ... }
+
+8) Int
+
+9) When you need a type transformation to be performed that Java will not do automatically
+
+10) See Program
+
+11) No
+
+12) Yes
