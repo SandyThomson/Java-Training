@@ -40,7 +40,7 @@ public class PrimeNumberGenerator {
 	 */
 	private static boolean isPrime(int potentialPrime) {
 
-		if (potentialPrime % 2 == 0)
+		if (potentialPrime > 2 && potentialPrime % 2 == 0)
 			return false;
 
 		for (int x = 3; x <= sqrt(potentialPrime); x++) {
