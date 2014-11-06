@@ -1,0 +1,29 @@
+Q1: Java strictly specifies the range and behaviour of its primitive types for portability reasons
+
+Q2: Java characters are Unicode (UTF-8), unlike some other languages that just use ASCII. 
+The storage requirements for Unicode is higher, however it pretty much means Java can be used globally. 
+
+Q3: False. Java boolean values can only be 'true' or 'false'. 
+There are straightfoward ways to convert 0 to false and non zero to true though.
+
+Q4: System.out.println("One\nTwo\nThree");
+
+Q5: "int sum" is only defined in the scope of the loop, meaning the program won't compile
+due to the use of "sum" in the subsequent println() statement.
+
+Q6: Prefix (++i) increments the variable and then returns the incremented value
+Postfix (i++) returns the current value then increments the variable
+
+Q7: You can do something like if( y != 0 && (x / y) == z ) { ... to stop a potential divide by zero runtime exception
+
+Q8: byte and short are promoted to integers. 
+To use the result in byte or short variables, you need to cast the result from an integer back to byte or short.
+Note: in doing this, you need to consider the risk of loss of precision.
+
+Q9: A cast is needed if the two types aren't compatible, or the destination type is smaller than the source type
+
+Q10: See code.
+
+Q11: Redundant parenthesis doesn't affect program performance, and can make your code more readable.
+
+Q12: A block does define a scope.
