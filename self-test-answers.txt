@@ -1,0 +1,24 @@
+ 1. To ensure portability - the same rules must be followed on all JVMs.
+ 
+ 2. An unsigned 16-bit type representing a unicode character.
+ 
+ 3. False.
+ 
+ 4. System.out.println( "One\nTwo\nThree" )
+ 
+ 5. sum is declared and destroyed with every iteration of the for loop, so doesn't actually sum the numbers.
+    It's also locally scoped to the loop so the println() won't work.
+ 
+ 6. Prefix form increments the value before using it. Postfix uses the value and then increments it.
+ 
+ 7. if ( foo != 0 && bar % foo ) { // do stuff }
+ 
+ 8. int
+ 
+ 9. Cast is necessary when a narrowing conversion is taking place or converting between incompatible types.
+ 
+10. See Primes.java
+
+11. No.
+
+12. Yes.
