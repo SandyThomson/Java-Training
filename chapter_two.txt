@@ -1,0 +1,23 @@
+1) primitives are strictly defined to ensure that they function exactly the same in all possible environments
+
+2) chars are 16-bit representations of characters. Java differs from other languages in that it uses 16-bit rather than 8-bit lengths.
+
+3) Boolean can only have the value true or false
+
+4) System.out.println("One\nTwo\nThree");
+
+5) sum is re-initialized in the loop, so it will only show value of last i. Also, as it is only within the scope of the loop it can't be used in the println at all.
+
+6) Prefix performs the increment before other operations ( like assignment ) while posfix before the increment after the assignment.
+
+7) Using a shortcircuit operator means that if the first parameter satisfies the condition, then the second statement is not evaulated. This means that if the second statement can leads to a divide by zero error ( eg "a / b = c" ), then this can be prevented by having the first statement check the value of b is not zero and using the short circuit operator.
+
+8) byte and short are promoted to int
+
+9) A cast is needed when conducting narrowing operations ( i.e. long -> int ) where information may be lost.   
+
+10) See code
+
+11) Redundant parantheses do not afect performance
+
+12) A block defines a scope.
