@@ -1,0 +1,23 @@
+1. Java strictly defines the range and behaviour of its primitives for portability.
+
+2. Java char is 2 byte unicode.
+
+3. False, booleans can only have the values true or false.
+
+4. System.out.println("One\nTwo\nThree");
+
+5. The variable sum is only in scope within the loop, so is initialised on each iteration and is unavailable outside of the loop.
+
+6. prefix increments then returns the value, postfix returns the value then increments
+ 
+7. if (y != 0 && x/y == 0)
+
+8. int
+
+9. When converting incompatible primitives or narrowing is required.
+
+10. See code
+
+11. No.
+
+12. Yes.
