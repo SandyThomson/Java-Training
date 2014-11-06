@@ -30,13 +30,13 @@ class PrimeCalculator {
   }
 
   public static void main( String[] args ) {
-    int start = ( args[0] != null ? Integer.parseInt( args[0] ) : 2 );
-	int end = ( args[1] != null ? Integer.parseInt( args[1] ) : 100 );
-	PrimeCalculator calc = new PrimeCalculator( start, end );
-	List<Integer> primes = calc.calculatePrimes();
-	System.out.println( "The prime numbers between " + start + " and " + end + " are:" );
-	for( int prime : primes ) {
-	  System.out.println( prime );
-	}
+    int start = ( args.length > 0 ? Integer.parseInt( args[0] ) : 2 );
+	  int end = ( args.length > 1 ? Integer.parseInt( args[1] ) : 100 );
+	  PrimeCalculator calc = new PrimeCalculator( start, end );
+	  List<Integer> primes = calc.calculatePrimes();
+	  System.out.println( "The prime numbers between " + start + " and " + end + " are:" );
+	  for( int prime : primes ) {
+	    System.out.println( prime );
+	  }
   }
 }
