@@ -6,7 +6,7 @@
 
 4) System.out.println("One\nTwo\nThree");
 
-5) sum is re-initialized in the loop, so it will only show value of last i
+5) sum is re-initialized in the loop, so it will only show value of last i. Also, as it is only within the scope of the loop it can't be used in the println at all.
 
 6) Prefix performs the increment before other operations ( like assignment ) while posfix before the increment after the assignment.
 
