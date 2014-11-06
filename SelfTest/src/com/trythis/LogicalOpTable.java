@@ -13,13 +13,9 @@ public class LogicalOpTable {
 												{ false, true  }, 
 												{ false, false } };
 	
-	private static BiFunction<Boolean, Boolean, Stream<Boolean>> getValues = (p,q) -> {
-		return Arrays.stream( new Boolean[] { p, q, (p&q), (p|q), (p^q), (!p) } );
-	};
-	
-	private static BiFunction<Boolean, Boolean, Stream<Integer>> getValuesAsInteger = (p,q) -> {
-		return getValues.apply(p, q).mapToInt( bool -> bool ? 1 : 0 ).boxed();
-	};
+	private static BiFunction<Boolean, Boolean, Stream<Boolean>> getValues = (p,q) -> Arrays.stream( new Boolean[] { p, q, (p&q), (p|q), (p^q), (!p) } );
+
+	private static BiFunction<Boolean, Boolean, Stream<Integer>> getValuesAsInteger = getValues.andThen( bools -> bools.mapToInt( bool -> bool ? 1 : 0 ).boxed() );
 	
 	public static void main( String[] args ) {
 		
@@ -36,6 +32,5 @@ public class LogicalOpTable {
 			.map( value -> getValuesAsInteger.apply( value[0], value[1] ) )
 			.map( value -> String.format("%s\t%s\t%s\t%s\t%s\t%s", value.toArray() ) )
 			.forEach( System.out::println );
-		
 	}
 }
