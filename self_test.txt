@@ -1,0 +1,13 @@
+1. It ensures consistency across platforms.
+2. It is a 16 bit unsigned integer type used for storing a 2 byte Unicode code-point.
+3. False
+4. System.out.println( "One\nTwo\nThree" );
+5. It assumes the i variable has already been declared and sum is declared within the scope of the for loop and so cannot be referenced in the println statement.
+6. Prefix: evaluates then returns
+   Postfix: returns then evaluates
+7. if ( a > 0 && b / a == 4 ) { // do something }
+8. int
+9. When a more specific type is required (i.e. further down the inheritance tree).
+10. See code
+11. No
+12. Yes
