@@ -1,19 +1,15 @@
 public class prime {
 	public static void main(String args[]) {
-		for (int x = 2; x <= 100; x++) {
-			int isPrime = 1;
-			for (int y = 2; y <= Math.ceil(Math.sqrt(x)); y++) {
-				if (y == x) {
-					break;
-				}
-				if (0 == (x % y)) {
-					isPrime = 0;
-					break;
+		mainloop: for (int primeCandidate = 2; primeCandidate <= 100; primeCandidate++) {
+			int campareMax = (int)Math.ceil(Math.sqrt(primeCandidate));
+			for (int divideCandidate = 2; divideCandidate <= campareMax; divideCandidate++) {
+				if (divideCandidate != primeCandidate && 0 == (primeCandidate % divideCandidate)) {
+					// fail, will divide - try next candidate
+					continue mainloop;
 				}
 			}
-			if (isPrime == 1) {
-				System.out.println("Prime : " + x);
-			}
+			// All comparisons don't divide
+			System.out.println("Prime : " + primeCandidate);
 		}
 	}
 }
