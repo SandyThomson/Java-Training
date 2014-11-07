@@ -1,0 +1,54 @@
+Chapter 2 Self Test
+
+	1. 	Why does Java strictly specify the range and behavior of its primitive types?
+        - (book answer) To define the limits of operations on an operand.
+        - (real answer) Becase it does not trust the developer to do the right thing.
+
+	2. 	What is Java’s character type, and how does it differ from the character type used by some other programming languages?
+        - (book answer) Contains a representation of a single unicode charater. Others may only contain ASCII character.
+        - (real answer) a 'short'. No difference.
+
+	3. 	A boolean value can have any value you like because any non-zero value is true. True or False?	
+        - False
+
+	4. 	Given this output,
+        	One
+        	Two
+        	Three
+	  	using a single string, show the println( ) statement that produced it.
+        - println( "\t\t\tOne\n"
+                  +"\t\t\tTwo\n"
+                  +"\t\t\tThree\n" );
+
+	5. 	What is wrong with this fragment?
+      for(i = 0; i < 10; i++) {
+        int sum;
+        sum = sum + i;
+      }
+      System.out.println("Sum is: " + sum);
+        - (book answer) 'i' is not defined. 'sum' has not been initialised. 
+        - (real answer) Someone tried to use Java for such a program.
+
+	6. 	Explain the difference between the prefix and postfix forms of the increment operator.
+        - prefix operators act on the operand before it's used.
+        - postfix operators act on the operand after it's been used.
+
+	7. 	Show how a short-circuit AND can be used to prevent a divide-by-zero error.
+		- "if ( b != 0 && (a/b) > 0.5 ) {"
+
+	8. 	In an expression, what type are byte and short promoted to?
+		- int
+
+	9. 	In general, when is a cast needed?
+		- (book answer) During 'narrowing conversions'
+		- (real answer) When it doesn't work without casting.
+
+	10. 	Write a program that finds all of the prime numbers between 2 and 100.
+    - Check out "src/prime.java"
+
+	11. 	Does the use of redundant parentheses affect program performance?
+    - Nope
+
+	12. 	Does a block define a scope?
+    - Partially
+	
