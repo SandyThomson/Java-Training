@@ -1,0 +1,39 @@
+1. See countSpaces.java
+
+2. if( condition ) {
+     statement;
+     ...
+   }
+   else if( condition ) {
+     statement;
+     ...
+   }
+   ...
+   else {
+     statement;
+     ...
+   }
+   
+3. if( y > 100 )
+
+4. for( int i = 1000; i >= 0; i -= 2 )
+
+5. No, i is not in scope for the assignment to count.
+
+6. break can be used to exit a loop or jump to the end of a labelled block.
+
+7. "after while"
+
+8. 0 1 
+   2 3 
+   4 5 
+   6 7 
+   8 9 
+
+9. for( int i = 1; i <= 1024; i *= 2 ) System.out.print( i + " " );
+
+10. See invertCase.java
+
+11. A loop with no terminating condition in its declaration (terminating conditions are then generally moved into the loop body)
+
+12. Yes
