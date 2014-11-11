@@ -106,7 +106,7 @@ See CaseSwitching.java
   11) _What is an infinite loop?_
   
 A loop with no terminating condition, usually without a control variable or iterator either. It
-will run forever, or at least until someone adds ~~NullPointerException~~ break statement.
+will run forever, or at least until someone adds a ~~NullPointerException~~ break statement.
     
   12) _When using *break* with a label, must the label be on a block that contains the *break*?_
   
