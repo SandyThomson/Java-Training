@@ -3,7 +3,7 @@
   1) _Write a program that reads characters from the keyboard until a period is received.
      Have the program count the number of spaces. Report the total at the end of the program._
 
-	See `SpaceCounter.java`.
+See `SpaceCounter.java`.
 	
   2) _Show the general form of the *if-else-if* ladder._
   
@@ -25,9 +25,10 @@ else
     }
   else System.out.println("error"); // what if?
 ```  
-    _to what if does the last *else* associate?_
+
+_to what if does the last *else* associate?_
     
-    The last else is associated with `if(y > 100)`).
+The last else is associated with `if(y > 100)`).
     
   4) _Show the *for* statement for a loop that counts from 1000 to 0 by -2._
    
@@ -44,12 +45,12 @@ for(int i = 0; i < num; i++)
 count = i;
 ```
 
-    No, `i` is defined in the scope of the `for` loop.
+No, `i` is defined in the scope of the `for` loop.
     
   6) _Explain what *break* does. Be sure to explain both of its forms._
   
-    The unlabeled form of `break` exits the current block, the labeled form can be used to exit to a labelled 
-    outer block when blocks are arbitrarily nested (as long as the block encloses the block `break` is executed from). 
+The unlabeled form of `break` exits the current block, the labeled form can be used to exit to a labelled 
+outer block when blocks are arbitrarily nested (as long as the block encloses the block `break` is executed from). 
     
   7) _In the following fragment, after the *break* statement executes, what is displayed?_
   
@@ -91,8 +92,8 @@ for(int i = 0; i<10; i++) {
     arbitrary way. Using this concept, write a program that uses a *for* loop to
     generate progression 1, 2, 4, 8, 16, 32, and so on._
     
-    And so on? As in without end? Alright. `InfiniteBase2Progression.java`. A bounded
-    solution using a boring *for* loop might look like:
+And so on? As in without end? Alright. `InfiniteBase2Progression.java`. A bounded
+solution using a boring *for* loop might look like:
  
  ```java
 for( int i = 1; i > 0; i <<= 1 )
@@ -107,15 +108,15 @@ for( int i = 1; i > 0; i <<= 1 )
      user enters a period. At the end, have the program display the number of case changes
      that have taken place._
      
-     See `CaseSwitcher.java`.
+See `CaseSwitcher.java`.
      
   11) _What is an infinite loop?_
   
-    A loop with either literally no exit condition (short of killing the program or the power)
-    or a user controlled exit condition (like a game loop that will only exit when the user
-    selects to quit the game) or with a non-deterministic exit condition.
+A loop with either literally no exit condition (short of killing the program or the power)
+or a user controlled exit condition (like a game loop that will only exit when the user
+selects to quit the game) or with a non-deterministic exit condition.
     
   12) _When using *break* with a label, must the label be on a block that contains the *break*?_
   
-    Yes, the labelled block must contain the break, otherwise it's just a filthy `goto`.
+Yes, the labelled block must contain the break, otherwise it's just a filthy `goto`.
     
