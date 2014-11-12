@@ -138,7 +138,7 @@ for( int i = 1; i < 1024; i += i ){
      user enters a period. At the end, have the program display the number of case changes
      that have taken place._
 
-[CharacterInverter.java](../src/main/java/CharacterInverter.java)
+[CharacterInverter.java](../src/main/java/ch3/CharacterInverter.java)
   
   11) _What is an infinite loop?_
   
