@@ -2,8 +2,8 @@
 
   1) _Write a program that reads characters from the keyboard until a period is received.
      Have the program count the number of spaces. Report the total at the end of the program._
-     
-     (Spaaaaaaaaaaace.java)[src/main/java/ch3/Spaaaaaaaaaaace.java]
+
+[Spaaaaaaaaaaace.java](../src/main/java/ch3/Spaaaaaaaaaaace.java)
 
 	
   2) _Show the general form of the *if-else-if* ladder._
@@ -32,10 +32,12 @@
 ```  
 
 _to what if does the last *else* associate?_
+
 this would associate with the `if (y > 100) {`
     
     
   4) _Show the *for* statement for a loop that counts from 1000 to 0 by -2._
+  
   ```java
   int i = 0;
   for( int i = 1000; i >= 0; i-=2 ){
@@ -52,13 +54,15 @@ for(int i = 0; i < num; i++)
   
 count = i;
 ```
+
 No:
   * `num` is not defined or altered. Could result in an infinte loop.
   * `sum` is not defined.
   * `count` is not defined. Also `i` is being assigned to count, but `i` is out of scope by this point.
      
   6) _Explain what *break* does. Be sure to explain both of its forms._
-  breaks out of the inner most loop it is placed within, or take thread of execution back to a given label.
+  
+  Breaks out of the inner most loop it is placed within, or take thread of execution back to a given label.
   
     
   7) _In the following fragment, after the *break* statement executes, what is displayed?_
@@ -133,12 +137,15 @@ for( int i = 1; i < 1024; i += i ){
      the result. Make no changes to any other character. Have the program stop when the
      user enters a period. At the end, have the program display the number of case changes
      that have taken place._
-     
+
+[CharacterInverter.java](../src/main/java/CharacterInverter.java]
   
   11) _What is an infinite loop?_
-  a loop which is infinite.
+  
+ A loop which is infinite.
   
     
   12) _When using *break* with a label, must the label be on a block that contains the *break*?_
+  
 Yes i think so.  
  
