@@ -16,9 +16,9 @@ public class Convert {
 		while ( ( c = (char)System.in.read() ) != PERIOD ) {
 			
 			// convert characters within the [A-Za-z] range.
-			if ( c >= 'A' && c <= 'z' ) {
+			if ( Character.isLetter( c ) ) {
 				count++;
-				c += ( c >= 'a' ? TO_UPPER : TO_LOWER );
+				c += ( Character.isLowerCase( c ) ? TO_UPPER : TO_LOWER );
 			}
 			System.out.print( c );
 		}
