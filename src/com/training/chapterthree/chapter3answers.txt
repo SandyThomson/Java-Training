@@ -1,0 +1,29 @@
+1) SpaceCount.java
+
+2) if ( condition ) statement
+   else if ( condition ) statement
+   else statement
+
+3) The else associates with the inner if statement because it is part of the same statement for the outer if statement
+
+4) for( int i = 1000; i >= 0; i -= 2
+
+5) No, because i only exists within the scope of the for loop.
+
+6) Break has two forms. 'break' will end the innermost loop or switch statement that contains it. 'break label' will end the statement with that label
+
+7) after while  
+
+8) 0 1
+   2 3
+   4 5 
+   6 7 
+   8 9
+
+9) PowersOfTwo.java
+
+10) UpToLow.java
+
+11) A loop that cannot be ended by its condition i.e. while(true) so it will run forver unless break is used.
+
+12) Yes 
