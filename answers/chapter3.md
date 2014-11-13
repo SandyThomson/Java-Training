@@ -108,7 +108,7 @@ for( int i = 1; i < LIMIT; i*=2 );
   
   11) _What is an infinite loop?_
 
-A loop that neve ends  
+A loop that never ends  
     
   12) _When using *break* with a label, must the label be on a block that contains the *break*?_
   
