@@ -16,10 +16,10 @@ public class CaseChanger {
 				inp = (char) System.in.read();
 				
 				char converted;
-				if ( inp > 96 && inp < 123 ) {
+				if ( inp >= 'a' && inp <= 'z' ) {
 					converted = (char) (inp - 32);
 				}
-				else if ( inp > 64 && inp < 91 ) {
+				else if ( inp >= 'A' && inp <= 'Z' ) {
 					converted = (char) (inp + 32);
 				}
 				else {

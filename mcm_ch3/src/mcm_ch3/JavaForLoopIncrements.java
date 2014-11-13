@@ -8,5 +8,4 @@ public class JavaForLoopIncrements {
 			System.out.println( "Counter: " + i );
 		}
 	}
-	
 }
