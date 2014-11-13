@@ -1,0 +1,42 @@
+Chapter 3 self test answers
+
+1.  See ReadCharacters.java
+
+2.  General form of the if-else-if ladder:
+
+    if( condition ) {
+      statement;
+    }
+    else if( condition ) {
+      statement;
+    }
+    ...
+    else {
+      statement;
+    }
+
+3.  The last else associates with the first if
+
+4.  for( int i = 1000; i > 0; i -= 2 ) { ... }
+
+5.  No - i is declared in the context of the for loop so is not visible outside.
+
+6.  break will:
+      a) Exit from a loop structure or switch
+      b) Given a label, exit the current block with matching label
+
+7.  "after while"
+
+8.  0 1 
+    2 3 
+    4 5 
+    6 7 
+    8 9 
+
+9.  See PowersOfTwo.java
+
+10. See CaseSwap.java
+
+11. A loop whose condition will always be true - it will never naturally end.
+
+12. Yes.
