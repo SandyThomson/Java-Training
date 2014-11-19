@@ -9,12 +9,12 @@ public class HelpClassDemo {
 		
 		char choice;
 		do {
-			help.showMenu();
-			
-			choice = (char)System.in.read();
-			while ( System.in.read() != '\n' );
-			
-			help.helpOn( choice );	
+            help.showMenu();
+            
+            choice = (char)System.in.read();
+            while ( System.in.read() != '\n' );
+            
+            help.helpOn( choice );	
 		} while ( choice != 'q' );
 	}
 }

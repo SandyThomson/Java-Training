@@ -10,23 +10,23 @@ public class Help {
 	
 	private static enum TOPIC {
 		IF( "if", "if(condition) statement;\n"
-				+ "else statement;" ),
+	            + "else statement;" ),
 				
 		SWITCH( "switch", "switch (expression) {\n"
-						+ "  case constant:\n"
-						+ "    statement sequence\n"
-						+ "    break;\n"
-						+ "  // ...\n"
-						+ "}" ),
+                        + "  case constant:\n"
+                        + "    statement sequence\n"
+                        + "    break;\n"
+                        + "  // ...\n"
+                        + "}" ),
 						
 		FOR( "for", "for(init; condition; iteration)\n"
-				  + "  statement;" ),
+                  + "  statement;" ),
 		
 		WHILE( "while", "while(condition) statement;" ),
 		
 		DOWHILE( "do-while", "do {\n"
-						   + "  statement;\n"
-						   + "} while (condition);" ),
+                           + "  statement;\n"
+                           + "} while (condition);" ),
 						   
 		BREAK( "break", "break; or break label;" ),
 		
@@ -36,8 +36,8 @@ public class Help {
 		public final String message;
 		
 		private TOPIC( String name, String message ) {
-			this.name = name;
-			this.message = message;
+            this.name = name;
+            this.message = message;
 		}
 	}
 	
@@ -56,16 +56,16 @@ public class Help {
 	public void helpOn( int what ) {
 		if ( isValid( what ) )
 			TOPICS.entrySet().stream()
-							  .filter( entry -> entry.getKey() == what )
-					          .map( entry -> String.format( "\nThe %s:\n%s\n", entry.getValue().name, entry.getValue().message ) )
-					          .forEach( System.out::println );		
+                             .filter( entry -> entry.getKey() == what )
+                             .map( entry -> String.format( "\nThe %s:\n%s\n", entry.getValue().name, entry.getValue().message ) )
+                             .forEach( System.out::println );		
 	}
 	
 	public void showMenu() {
 		System.out.println( "Help on:" );
 		TOPICS.entrySet().stream()
-						 .map( entry -> String.format( "%s. %s", entry.getKey(), entry.getValue().name ) )
-						 .forEach( System.out::println );
+                         .map( entry -> String.format( "%s. %s", entry.getKey(), entry.getValue().name ) )
+                         .forEach( System.out::println );
 		System.out.print( "Choose one (q to quit): " );		
 	}
 	
