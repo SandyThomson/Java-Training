@@ -1,0 +1,28 @@
+1) An object is the instantiated form of a class. It is the physical representation of that class in memory.
+
+2) A class is defined as follows: 
+class ClassName {
+  //code					
+}
+
+3) The object has its own copy of the class' instance variables
+
+4) 
+MyCounter counter;
+counter = new MyCounter();
+
+5) double myMeth ( int a, int b )
+
+6) It must use a return statement like return x;
+
+7) A constructor has the name of the class.
+
+8) New creates an object in memory and initializes it using the constructor.
+
+9) Garbage collection cleans up unused objects so they no longer take up space in memory. Finalize() is a method that defines some action to take immediately before the object is garbage collected.
+
+10) 'this' is a reference to the object that invokes the method.
+
+11) Yes
+
+12) It must be void
