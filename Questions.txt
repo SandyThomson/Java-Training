@@ -1,0 +1,14 @@
+1.	An object is an instance of a class. The class defines the form of objects.
+2.	class MyClass {}
+3.	Instance variables
+4.	MyCounter counter;
+	  counter = new MyCounter();
+5.	double myMeth( int a, int b ){ return 0d}
+6.	With a return statement
+7.	Same name as the class
+8.	Create a new instance
+9.	Cleaning out of scope objects. It periodically checks the reference count on objects, if zero, it removes it from memory.
+	  finalize() is the last method called before destruction.
+10.	A keyword for an object to refer to itself.
+11.	Yes (if a no argument constructor is not explicitly defined, the compiler will add one which will just call the superclass constructor)
+12.	void
