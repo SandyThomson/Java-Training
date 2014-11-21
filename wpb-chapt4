@@ -1,0 +1,39 @@
+Chapter 4 Self Test
+
+  1.  What is the difference between a class and an object?
+      - A 'class' represents a plan for an eventual object. 
+      - An object is an instantiation (the real manifisation) of the class design.
+
+  2.  How is a class defined?
+      - Using the 'class' keyword.
+
+  3.  What does each object have its own copy of?
+      - Class variables.
+
+  4.  Using two separate statements, show how to declare an object called counter of a class called MyCounter.
+      - MyCOunter counter;
+      - counter = new MyCounter();
+
+  5.  Show how a method called myMeth( ) is declared if it has a return type of double and has two int parameters called a and b.
+      - double myMeth( int a, int b )
+
+  6.  How must a method return if it returns a value?
+      - With a "return <value>;" statement.
+
+  7.  What name does a constructor have?
+      - The same as the class.
+
+  8.  What does new do?
+      - Instantiate a new object, then run either the detault contrstuctor or the one defined by the programmer.
+
+  9.  What is garbage collection, and how does it work? What is finalize( )?
+      - The process where unused objects memory footprint is returned to the pool. Finalize() will be called for objects that are being garbage collected.
+
+  10.   What is this?
+      - A decleration that we are accessing the object copy of member variables (rather that local variables).
+
+  11.   Can a constructor have one or more parameters?
+      - Yup
+
+  12.   If a method returns no value, what must its return type be?
+      - void
