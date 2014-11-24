@@ -1,0 +1,28 @@
+1. A class defines an object. An object is an instance of a class.
+
+2. An object is defined by its data and its operations.
+
+3. An object has its own copy of the instance variables defined by its class.
+
+4. MyCounter counter;
+   counter = new MyCounter();
+
+5. double MyMeth(int a, int b) {
+     // do stuff
+   }
+
+6. using
+     return value;
+
+7. Constructors have the same name as their class.
+
+8. new allocates memory for an object, then calls the constructor for the class, then returns a reference to the new object.
+
+9. Garbage collection is the reclaiming of memory from unused object.
+   Finalise is called just before the final destruction of an object by the garbage collector.
+
+10. this is the object on which a method is called.
+
+11. Yes, a constructor can have on or more parameters.
+
+12. The return type void is used when a method returns no value.
