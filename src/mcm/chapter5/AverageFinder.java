@@ -1,4 +1,4 @@
-package mcm.chapter4;
+package mcm.chapter5;
 
 import java.util.Arrays;
 import java.util.OptionalDouble;
