@@ -2,9 +2,16 @@
 
 1) _Show two ways to declare a one-dimensional array of 12 doubles._
 
+`Double var[12] = new Double[12];`
+`Double[12] var = new Double 12;`
+
 2) _Show how to initialise a one-dimensional array of integers to the values 1 through 5._
 
+`Int[5] values = { 1, 2, 3, 4, 5 };`
+
 3) _Write a program that uses an array to find the average of 10 double values. Use any 10 values you like._
+
+See Double.java
 
 4) _Change the sort in Try This 5-1 so that it sorts an array of strings. Demonstrate that it works._
 
