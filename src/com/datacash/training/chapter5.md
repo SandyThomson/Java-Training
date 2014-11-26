@@ -1,11 +1,9 @@
-1. 
-```java
+1. ```java
 double array[] = new double[12];
 double[] array = new double[12];
 ```
 
-2.
-```java
+2.```java
 int[] array = {1,2,3,4,5};
 ```
 
