@@ -30,7 +30,7 @@ See Question4.java
 
 12) >>>
 
-13. See Question13.java
+13) See Question13.java
 
 14) The for loops cannot be converted into for-each loops, as the loop control variables are required to assign values to the area when sorting. It is possible to do this when using Lists as demonstrated in Question 4, although it is not as efficient.
 
