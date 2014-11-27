@@ -4,8 +4,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Class to sort a bunch of strings for Java training
+ * 
+ * @author Malcolm.Murray
+ *
+ */
 public class StringSorter {
 	
+	/**
+	 * Method to sort the strings.
+	 * 
+	 * @param strings
+	 * @return sorted list
+	 */
 	public List<String> sortStrings(List<String> strings){
 	
 		return mergeSort(strings);
@@ -24,12 +36,13 @@ public class StringSorter {
 		}
 		else{
 			
-			//Split
+			//Split the array in half
 			int half1 = strings.size() / 2;
-			
-			List<String> left = new ArrayList<String>(strings.subList(0, half1));
+			//Copy each half as new object as otherwise we are working on the same list
+			List<String> left = new ArrayList<String>( strings.subList( 0, half1 ) );
 			List<String> right = new ArrayList<String>(strings.subList(half1, strings.size()-1));
 			
+			//Divide and conquer
 			return merge(mergeSort(left), mergeSort(right));
 		}
 		
@@ -43,21 +56,20 @@ public class StringSorter {
 	 */
 	public List<String> merge(List<String> left, List<String> right){
 			
-		if(left.size() == 0){
+		//Make sure lists aren't empty - if they are return them
+		if ( left.size() == 0 ) {
 			return right;
 		}
-		
-		if(right.size() == 0){
+		if ( right.size() == 0 ) {
 			return left;
 		}
 		
+		//Create the result
 		List<String> result = new ArrayList<String>();
 		String next;
 		
-		//System.out.println("Comparing: "+left.get(0)+" with "+right.get(0)+" result: "+left.get(0).compareTo(right.get(0)));
-		
+		//Move elements to the right place
 		if(left.get(0).compareTo(right.get(0)) > 0){
-			
 			next = right.get(0);
 			right.remove(0);
 		}else{
