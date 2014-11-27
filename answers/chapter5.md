@@ -28,7 +28,7 @@ Q6
 		
 Q7
 
-		// TODO
+		See Encode(Test).java
 		
 Q8
 
