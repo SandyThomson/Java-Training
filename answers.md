@@ -19,11 +19,11 @@
   3) _Write a program that uses an array to find the average of 10 **double values**. Use any
      10 values you like._
      
-See `Average.java`.
+See [Average.java](src/org/java/training/Average.java).
 
   4) _Change the sort in Try This 5-1 so that it sorts an array of strings. Demonstrate that it works._
   
-See `StringSort.java`
+See [StringSort.java](src/org/java/training/StringSort.java).
 
   5) _What is the difference between the String methods `indexOf()` and `lastIndexOf()`?_
   
@@ -47,7 +47,7 @@ Or without assigning to a reference:
 
   7) _Expanding on the `Encode` cipher class, modify it so that it uses an eight-character string as the key._
   
-See `BadEncode.java`.
+See [BadEncode.java](src/org/java/training/BadEncode.java).
 
   8) _Can the bitwise operators be applied to the `double` type?_
   
@@ -83,7 +83,7 @@ A bitwise right-shift that doesn't extend the sign bit. For example signed right
 
  13) _Rewrite the `MinMax` class shown earlier in this chapter so that it uses a for-each style `for` loop._
  
- See `MinMax.java`.
+ See [MinMax.java](src/org/java/training/MinMax.java).
  
  14) _Can the `for` loops that perform sorting in the `Bubble` class shown in `Try This 5-1` be converted into
      for-each style loops? If not, why not?_
