@@ -1,6 +1,7 @@
 package com.selftest;
 
 import java.util.function.BiFunction;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Encode {
@@ -12,13 +13,10 @@ public class Encode {
     };
 
     private static String cipher(String message) {
-        StringBuilder result = new StringBuilder();
-        IntStream.range(0, message.length())
-                 .boxed()
-                 .map(i -> (char) cipherCharAt.apply(i, message).intValue())
-                 .forEach(c -> result.append(c));
-
-        return result.toString();
+        return IntStream.range(0, message.length()).boxed()
+                        .map(i -> (char)cipherCharAt.apply(i, message).intValue())
+                        .map(c -> c.toString())
+                        .collect( Collectors.joining() );
     }
 
     public static void main(String[] args) {
