@@ -1,0 +1,31 @@
+1. double test[] = new double[12];
+   double[] test = new double[12];
+
+2. int nums[] = { 1, 2, 3, 4, 5 };
+
+3. see average.java
+
+4. see BubbleString.java
+
+5. indexOf() finds the first match. lastIndexOf() finds the last match.
+
+6. "I like Java".length();
+   "I like Java".charAt(0);
+
+7. see Encode.java
+
+8. No, bitwise operators cannot be applied to the double type.
+
+9. y = ( x < 0 ) ? 10 : 20;
+
+10. Logical, because the operands are booleans.
+
+11. Yes, overruns are errors. Yes, negative values are out of range. 
+
+12. >>>
+
+13. see MinMax2.java
+
+14. No, because you need the positions as well as the values to swap.
+
+15. Yes, since JDK 7.
