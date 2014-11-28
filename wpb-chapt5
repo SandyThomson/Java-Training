@@ -1,0 +1,85 @@
+
+  1.  Show two ways to declare a one-dimensional array of 12 doubles.
+        - "double[] stupid = new double[12];"
+        - "double stupid[] = {1,2,3,4,5,6,7,8,9,10,11,12};"
+
+  2.  Show how to initialize a one-dimensional array of integers to the values 1 through 5.
+        - "int stupid[] = {1,2,3,4,5};"
+
+  3.  Write a program that uses an array to find the average of 10 double values. Use any 10 values you like.
+        double stupid[] = {1,2,3,4,5,6,7,8,9,10};
+        double sum = 0;
+        for( double val : stupid ) sum += val;
+        System.out.println("Average = " + sum/10 );
+
+  4.  Change the sort in Try This 5-1 so that it sorts an array of strings. Demonstrate that it works.
+        - TBD
+
+  5.  What is the difference between the String methods indexOf( ) and lastIndexOf( )?
+
+  6.  Since all strings are objects of type String, show how you can call the length( ) and charAt( ) methods on this string literal: "I like Java".
+        - "I like Java".length();
+        - "I like Java".charAt(3);
+
+  7.  Expanding on the Encode cipher class, modify it so that it uses an eight-character string as the key. 
+        - class Encode {
+            public static void main(String args[]) {
+              String msg = "This is a test";
+              String encmsg = "";
+              String decmsg = "";
+              int key = 88;
+              System.out.print("Original message: ");
+              System.out.println(msg);
+
+              // encode the message This constructs the encoded string.
+              for(int i=0; i < msg.length(); i++)
+                encmsg = encmsg + (char) (msg.charAt(i) ^ key);
+
+              System.out.print("Encoded message: ");
+              System.out.println(encmsg);
+
+              // decode the message
+              for(int i=0; i < msg.length(); i++)
+                decmsg = decmsg + (char) (encmsg.charAt(i) ^ key);
+
+              System.out.print("Decoded message: ");
+              System.out.println(decmsg);
+            }
+          }
+
+  8.  Can the bitwise operators be applied to the double type?
+        - Yes - but not in Java.
+
+  9.  Show how this sequence can be rewritten using the ? operator.  if(x < 0) y = 10; else y = 20;
+        - "y = x<0 ? 10 : 20;"
+
+  10.   In the following fragment, is the & a bitwise or logical operator? Why? boolean a, b; // ...  if(a & b) ...
+        - logical;
+
+  11.   Is it an error to overrun the end of an array? Is it an error to index an array with a negative value?
+        - Yes and yes.
+
+  12.   What is the unsigned right-shift operator?
+        - A standard shift to the right, padding with 0s.
+
+  13.   Rewrite the MinMax class shown earlier in this chapter so that it uses a for-each style for loop.
+        - class MinMax {
+            public static void main(String args[]) {
+              int nums[] = new int[10];
+              int min, max;
+              int nums[] = { 99, -10, 100123, 18, -978,
+                            5623, 463, -9, 287, 49 };
+              min = max = nums[0];
+              for(int i; nums) {
+                if(i < min) min = i;
+                if(i > max) max = i;
+              }
+              System.out.println("min and max: " + min + " " + max);
+            }
+          }
+
+  14.   Can the for loops that perform sorting in the Bubble class shown in Try This 5-1 be converted into for-each style loops? If not, why not?
+        - Nope, neither are itterating over a collection.
+
+  15.   Can a String control a switch statement?
+        - Sure
