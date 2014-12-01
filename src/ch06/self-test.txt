@@ -1,0 +1,30 @@
+1. No, count is private in X so cannot be accessed within Y
+
+2. An access modifier must precede a member's declaration
+
+3. See code
+
+4. See Swap.java
+
+5. No, they have the same signature because return types are not used to differeniate overloaded methods.
+
+6. ReverseString.java
+
+7. static
+
+8. A static block can be used to execute code before a class is used, eg, initialisation of static variables.
+
+9. An inner class is a non static class defined inside another class.
+
+10. Use private to make a member accessible only by other members of its class
+
+11. The name of a method plus its parameter list constitues the method's signature.
+
+12. An int argument is passed to a method by using call-by-value
+
+13. see VarArgsDemo.java
+
+14. Yes, vararg methods can be overloaded.
+
+15. void ambiguous(int n, int ... v)
+    void ambiguous(int ... v)
