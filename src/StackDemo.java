@@ -4,10 +4,10 @@
 
 
 public class StackDemo {
-	
-	public static void main ( String[] args ) {
+  
+  public static void main ( String[] args ) {
     Stack stack = new Stack( 5 );
-	
+  
     System.out.println( "Made a stack");
     
     System.out.println( stack.pop( ) );
@@ -34,6 +34,6 @@ public class StackDemo {
     System.out.println( stack.pop( ) );
     System.out.println( "To String: " + stack.toString() );
     
-	}
+  }
 
 }
