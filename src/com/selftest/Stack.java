@@ -72,10 +72,10 @@ public class Stack implements Iterable<Character> {
     public static void main(String[] args) {
         try {
             Stack stack = new Stack(8);
-            "hgfedcba".chars().mapToObj(i -> (char) i).forEach(stack::push);
+            "abcdefgh".chars().mapToObj(i -> (char) i).forEach(stack::push);
 
             Stack newStack = new Stack(stack);
-            Stack anotherStack = new Stack(new char[] { 'z', 'y', 'x', 'w' });
+            Stack anotherStack = new Stack(new char[] { 'w', 'x', 'y', 'z' });
 
             System.out.printf("Queue: %s%n", stack.stream().map(c -> c.toString()).collect(Collectors.joining(",")));
             System.out.printf("Copy : %s%n", newStack.stream().map(c -> c.toString()).collect(Collectors.joining(",")));
