@@ -2,13 +2,13 @@
  
 2. An access modifier must *precede* a members declaration
 
-3. # TODO
+3. See Stack.java and StackTest.java
 
-4. # TODO
+4. See ExampleObject.java and SwapTest.java
 
 5. The fragment is not correct, as the method signatures are identical (note that return types do not form part of a method signature)
 
-6. # TODO
+6. See StringBackwards.java and StringBackwardsTest.java
 
 7. If you need to define a *global* variable (which is what I /think/ this question is asking), you'd mark the variable as static
 
@@ -22,7 +22,7 @@
 
 12. call-by-value (for primatives). call-by-reference is used for objects.
 
-13. # TODO
+13. See VarargsTest.java
 
 14. Yes
 
