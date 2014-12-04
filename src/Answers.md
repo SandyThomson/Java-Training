@@ -4,13 +4,13 @@ Q1) No. Count is a private member variable and cannot be accessed directly from 
 
 Q2) Precede
 
-Q3) See [StackDemo.java](./src/StackDemo.java)
+Q3) See [StackDemo.java](./StackDemo.java)
 
-Q4) See [Swap.java](./src/Swap.java)
+Q4) See [Swap.java](./Swap.java)
 
 Q5) Yes looks fine to me.
 
-Q6) See [Recurse.java](./src/Recurse.java)
+Q6) See [Recurse.java](./Recurse.java)
 
 Q7) Static.
 
@@ -25,7 +25,7 @@ Q11) Signature.
 
 Q12) Value.
 
-Q13) See [Sum.java](./src/Sum.java)
+Q13) See [Sum.java](./Sum.java)
  
 Q14) Yes. The vararg type can differ e.g: 
 ```void funct( int ...) 
