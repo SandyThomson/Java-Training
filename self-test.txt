@@ -1,0 +1,34 @@
+ 1. `count` is private to the X class and so cannot be directly accessed directly from the Y class.
+
+ 2. An access modifier must _precede_ a member’s declaration.
+ 
+ 3. See StackDemo.java
+
+ 4. void swap( Test t1, Test t2 ) {
+  int tmp = t1.a;
+  t1.a = t2.a;
+  t2.a = tmp;
+}
+
+ 5. The return type does not form part of the method signature so both methods have the same sig, which is invalid.
+
+ 6. See BackwardsDemo.java
+ 
+ 7. Shared variable must be declared as static
+ 
+ 8. A static block can be used to execute some code before any objects are created, e.g. for initialisation.
+
+ 9. An inner class is a class which is nested inside another class
+ 
+10. To make a member accessible by only other members of its class, the private modifier must be used.
+
+11. The name of a method plus its parameter list constitutes the method’s signature.
+
+12. An int argument is passed to a method by using call-by-value.
+
+13. See Sum.java
+
+14. A varargs method can be overloaded.
+
+15. int foo( int a, int ... n ) {}
+    int foo( int ... n ) {}
