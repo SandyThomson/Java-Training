@@ -4,6 +4,7 @@ import java.nio.BufferOverflowException;
 import java.nio.BufferUnderflowException;
 import java.util.Iterator;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
@@ -18,7 +19,7 @@ public class Stack implements Iterable<Character> {
 
     public Stack(Stack other) {
         this.stack = new char[other.stack.length];
-        other.stream().forEach( this::push );
+        IntStream.range(0, other.stack.length).forEach( i -> this.push( other.stack[i] ) );
     }
 
     public Stack(char[] values) {
@@ -30,14 +31,16 @@ public class Stack implements Iterable<Character> {
     @Override
     public Iterator<Character> iterator() {
         return new Iterator<Character>() {
+            int position = size;
+            
             @Override
             public boolean hasNext() {
-                return !isEmpty();
+                return position > 0;
             }
 
             @Override
             public Character next() {
-                return pop();
+                return stack[--position];
             }
         };
     }
@@ -72,12 +75,13 @@ public class Stack implements Iterable<Character> {
 
             Stack newStack = new Stack(stack);
             Stack anotherStack = new Stack(new char[] { 'w', 'x', 'y', 'z' });
-
+            
             System.out.printf("Queue: %s%n", stack.stream().map(c -> c.toString()).collect(Collectors.joining(",")));
             System.out.printf("Copy : %s%n", newStack.stream().map(c -> c.toString()).collect(Collectors.joining(",")));
             System.out.printf("Array: %s%n", anotherStack.stream().map(c -> c.toString()).collect(Collectors.joining(",")));
 
             // try to read an empty stack.
+            while ( !stack.isEmpty() ) stack.pop();
             stack.pop();
 
         } catch (BufferOverflowException | BufferUnderflowException e) {

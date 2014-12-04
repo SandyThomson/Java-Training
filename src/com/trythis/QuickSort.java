@@ -28,7 +28,7 @@ public class QuickSort {
             while( GREATER_THAN( items[j], t ) && j > left ) j--;
             
             if ( i <= j )
-                swap(items, i++, j);           
+                swap(items, i++, j--);           
         } while ( i <= j );
 
         if ( left  < j ) sort( items, left, j  );

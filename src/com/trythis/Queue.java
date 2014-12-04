@@ -1,10 +1,10 @@
 package com.trythis;
 
+import java.nio.BufferUnderflowException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
@@ -16,7 +16,7 @@ public class Queue<T> implements Iterable<T> {
         this.queue = new ArrayList<T>();
     }
     
-    public Queue( Queue<T> other ) {
+    public <R extends T> Queue( Queue<R> other ) {
         this.queue = new ArrayList<T>();
         this.queue.addAll( other.queue );
     }
@@ -28,17 +28,7 @@ public class Queue<T> implements Iterable<T> {
     
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
-            @Override
-            public boolean hasNext() {
-                return !isEmpty();
-            }
-
-            @Override
-            public T next() {
-                return get();
-            }
-        };
+        return queue.iterator();
     }
     
     public Stream<T> stream() {
@@ -50,9 +40,9 @@ public class Queue<T> implements Iterable<T> {
         return this;
     }
     
-    public T get() throws NoSuchElementException {
+    public T get() throws BufferUnderflowException {
         if ( isEmpty() )
-            throw new NoSuchElementException( "Error: The queue is empty." );
+            throw new BufferUnderflowException(  );
         
         return this.queue.remove( 0 );
     }
@@ -74,10 +64,11 @@ public class Queue<T> implements Iterable<T> {
             System.out.printf("Array: %s%n", anotherQ.stream().map( c -> c.toString() ).collect( Collectors.joining("," ) ) );
             
             // try to read an empty queue.
+            while( !q.isEmpty() ) q.get();
             q.get();
             
-        } catch ( NoSuchElementException e ) {
-            System.out.println( e.getMessage() );
+        } catch ( BufferUnderflowException e ) {
+            System.out.println( "Error: The queue is empty." );
         }
     } 
 }
