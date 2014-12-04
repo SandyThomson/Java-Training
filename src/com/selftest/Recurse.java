@@ -3,7 +3,7 @@ package com.selftest;
 public class Recurse {
     
     private static void reverse( String message, int position ) {
-        System.out.print( message.toCharArray()[position] );
+        System.out.print( message.charAt( position ) );
         if (position > 0 ) 
             reverse( message, --position );
     }

@@ -1,32 +1,28 @@
 package com.selftest;
 
+import java.nio.BufferOverflowException;
+import java.nio.BufferUnderflowException;
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 public class Stack implements Iterable<Character> {
     private char[] stack;
-    private int capacity;
     private int size;
 
     public Stack(int capacity) {
-        this.capacity = capacity;
-        this.stack = new char[this.capacity];
+        this.stack = new char[capacity];
         this.size = 0;
     }
 
     public Stack(Stack other) {
-        this.capacity = other.capacity;
-        this.stack = new char[this.capacity];
-        IntStream.range(0, other.size).forEach(i -> this.push(other.stack[i]));
+        this.stack = new char[other.stack.length];
+        other.stream().forEach( this::push );
     }
 
     public Stack(char[] values) {
-        this.capacity = values.length;
-        this.stack = new char[this.capacity];
+        this.stack = new char[values.length];
         for (char c : values)
             this.push(c);
     }
@@ -50,17 +46,17 @@ public class Stack implements Iterable<Character> {
         return StreamSupport.stream(this.spliterator(), false);
     }
 
-    public Stack push(char value) throws IndexOutOfBoundsException {
-        if (size + 1 > capacity)
-            throw new IndexOutOfBoundsException("Error: The stack is full.");
+    public Stack push(char value) throws BufferOverflowException {
+        if (size + 1 > this.stack.length)
+            throw new BufferOverflowException();
 
         this.stack[size++] = value;
         return this;
     }
 
-    public char pop() throws NoSuchElementException {
+    public char pop() throws BufferUnderflowException {
         if (isEmpty())
-            throw new NoSuchElementException("Error: The stack is empty.");
+            throw new BufferUnderflowException();
 
         return this.stack[--size];
     }
@@ -84,8 +80,8 @@ public class Stack implements Iterable<Character> {
             // try to read an empty stack.
             stack.pop();
 
-        } catch (IndexOutOfBoundsException | NoSuchElementException e) {
-            System.out.println(e.getMessage());
+        } catch (BufferOverflowException | BufferUnderflowException e) {
+            System.out.println("Stack is " + (e instanceof BufferOverflowException ? "full." : "empty."));
         }
     }
 }
