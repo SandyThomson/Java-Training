@@ -3,6 +3,7 @@ package org.java.training;
 import java.nio.BufferOverflowException;
 import java.nio.BufferUnderflowException;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
@@ -13,10 +14,25 @@ import java.util.stream.StreamSupport;
 public class Stack<T> implements Iterable<T> {
 	private T[] stack;
 	private int head;
-
+	
 	public Stack(int length, T... ts) {
 		stack = Arrays.copyOf(ts, length);
 		head = ts.length;
+	}
+	
+	public <R extends T> Stack(R[] ts) {
+		this(ts.length);
+		Arrays.stream(ts).forEach(this::push);
+	}
+
+	public <R extends T, X extends Collection<R>> Stack(X ts) {
+		this(ts.size());
+		ts.stream().forEach(this::push);
+	}
+
+	public <R extends T> Stack( Stack<R> that ) {
+		this(that.capacity());
+		for(int i = 0; i < that.length(); this.push(that.stack[i++]));
 	}
 	
 	public Stack<T> push(T item) {

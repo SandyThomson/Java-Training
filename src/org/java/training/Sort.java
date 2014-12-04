@@ -61,10 +61,7 @@ class QuickSorter implements Sorter {
 			while (cmp.compare(ts[a], pivot) < 0 && a < right) ++a;
 			while (cmp.compare(pivot, ts[b]) < 0 && b > left) --b;
 			
-			if( a <= b ) {
-				Sorter.swap(ts, a, b);
-				a++; b--;
-			}
+			if( a <= b ) Sorter.swap(ts, a++, b--);
 		} while (a <= b);
 		
 		if ( left < b ) sort(ts, cmp, left, b);

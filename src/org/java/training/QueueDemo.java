@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 /**
- * Try This 6-1 & 6-2
+ * Try This 6-1 and 6-2
  */
 public class QueueDemo {
 	
