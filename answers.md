@@ -5,7 +5,9 @@
 class X {
   private int count;
 ```
-    _is the following fragment correct?_
+
+_is the following fragment correct?_
+
 ```java
 class Y {
   public static void main(String args[]) {
@@ -46,7 +48,7 @@ Prepend.
      class private. (Hint: You can use the **Queue** class as a model; just change the way the data is
      accessed.)_
      
-See [Stack.java](org/java/training/Stack.java).
+See [Stack.java](src/org/java/training/Stack.java).
 
   4) _Given this class,_
 ```java
@@ -55,8 +57,8 @@ class Test {
   Test(int i) { a = i; }
 }
 ```
-    _write a method called `swap()` that exchanges the contents of the objects referred to by two `Test`
-    object references._
+
+_write a method called `swap()` that exchanges the contents of the objects referred to by two `Test` object references._
     
 ```java
   public static void swap(Test x, Test y) {
