@@ -21,7 +21,7 @@ public class Queue<T> implements Iterable<T> {
         this.queue.addAll( other.queue );
     }
 
-    public Queue( T[] values ) {
+    public <R extends T> Queue( R[] values ) {
         this.queue = new ArrayList<T>();
         Arrays.stream( values ).forEach( t -> this.queue.add( t ) );
     }
