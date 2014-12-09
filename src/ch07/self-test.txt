@@ -1,0 +1,23 @@
+1. No, a superclass does not have access to its subclass' members. Yes, a subclass has access to its superclass' non private members.
+
+2. See Circle.java/AbsShape.java
+
+3. declaring members' private stops subclasses from accessing them
+
+4. super is used to call superclass constructors and to specify a superclass method that has been overridden by its subclass
+
+5. Alpha, then Beta, then Gamma
+
+6. A superclass reference to a subclass object would only have access to the superclass' methods, even if these had been overridden by the subclass.
+
+7. An abstract class is one that hasn't been fully defined, with the implication that subclasses will complete the definition.
+
+8. Marking a method final prevents it from being overridden. Marking a class final prevents it from being inherited from.
+
+9. Inheritance, method overriding and abstract classes help support the "one interface, many methods" philosophy aiding polymorphism.
+
+10. The Object class
+
+11. True, a class with an abstract method must be declared abstract. 
+
+12. final is used to make named constants
