@@ -42,12 +42,12 @@ class Gamma extends Beta { ...
 
 **In what order do the constructors for these classes complete their execution when a `Gamma` object is instantiated?**
 
-   i. The `Gamma` constructor will call the `Beta` constructor.
-   i. The `Beta` constructor will call the `Alpha` constructor.
-   i. The `Alpha` constructor will then complete.
-   i. The `Beta` constructor will then complete.
-   i. The `Gamma` constructor will then complete.
-   i. A `Gamma` object will now be created.
+   1. The `Gamma` constructor will call the `Beta` constructor.
+   2. The `Beta` constructor will call the `Alpha` constructor.
+   3. The `Alpha` constructor will then complete.
+   4. The `Beta` constructor will then complete.
+   5. The `Gamma` constructor will then complete.
+   6. A `Gamma` object will now be created.
   
 6. **A superclass reference can refer to a subclass object. Explain why this is important as it relates to method overriding.**
 
