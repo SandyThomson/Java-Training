@@ -31,3 +31,21 @@ super.x;
 ```
 
 5. Alpha, Beta, Gamma. The superclass gets constructed first.
+
+6. It basically means the code that references the superclass doesn't need to worry about /what/ particular subclass the reference refers to. 
+This means you can build common functionality etc. 
+
+7. An abstract class is a class that cannot be instantiated and must be extended
+
+8. To stop a method from being overridden, you'd mark it as final. Similarly, you'd mark a class as final to stop it being inherited.
+
+9. An abstract superclass can specify abstract methods that *must* be overridden by classes that extend it. 
+There can be multiple subclasses that provide different implementations however they can all be assigned to a superclass reference.
+
+This is quite similar to question 6..
+
+10. Object.
+
+11. True
+
+12. final
