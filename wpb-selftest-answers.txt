@@ -1,0 +1,56 @@
+   Chapter 7 Self Test
+
+  1.  Does a superclass have access to the members of a subclass? 
+        - None at all
+      Does a subclass have access to the members of a superclass?
+        - Completely (unless the supercalss has marked elements as private)
+
+  2.  Create a subclass of TwoDShape called Circle. Include an area( ) method that computes
+the area of the circle and a constructor that uses super to initialize the TwoDShape portion.
+        - TODO
+
+  3.  How do you prevent a subclass from having access to a member of a superclass?
+        - Setting memebers as private in the supercalss.
+
+  4.  Describe the purpose and use of the two versions of super described in this chapter.
+        - Use super as the 1st statement in a constructor, as a call to the superclass contructor.
+        - Use super.memeber, as direct reference to methods (that may have been overridden 
+          by the subclass) in the super class.
+
+  5.  Given the following hierarchy:
+class Alpha { ...
+class Beta extends Alpha { ...
+Class Gamma extends Beta { ...
+  
+  In what order do the constructors for these classes complete their execution when a Gamma
+object is instantiated?
+        - Alpha, Beta, Gamma.
+
+  6.  A superclass reference can refer to a subclass object. Explain why this is important as it
+relates to method overriding.
+        - pollymorphisum. ie, you get when run, the methods of the subclass.
+
+  7.  What is an abstract class?
+        - (.h file equiverlent) A template that defines methods that need to be implemented by a subclass.
+
+  8.  How do you prevent a method from being overridden? 
+        - prefix the method defenition with 'final'
+      How do you prevent a class from being inherited?
+        - prefix the class defenition with 'final'
+
+  9.  Explain how inheritance, method overriding, and abstract classes are used to support
+polymorphism.
+        - ... refer to a text book if you want an answer like that ...
+
+  10.   What class is a superclass of every other class?
+        - Object
+
+  11.   A class that contains at least one abstract method must, itself, be declared abstract.
+True or False?
+        - Yup
+
+  12.   What keyword is used to create a named constant?
+        - Final
+
+
+
