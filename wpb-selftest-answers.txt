@@ -7,7 +7,7 @@
 
   2.  Create a subclass of TwoDShape called Circle. Include an area( ) method that computes
 the area of the circle and a constructor that uses super to initialize the TwoDShape portion.
-        - TODO
+        - See "Question2.java"
 
   3.  How do you prevent a subclass from having access to a member of a superclass?
         - Setting memebers as private in the supercalss.
@@ -40,7 +40,7 @@ relates to method overriding.
 
   9.  Explain how inheritance, method overriding, and abstract classes are used to support
 polymorphism.
-        - ... refer to a text book if you want an answer like that ...
+        - Err...
 
   10.   What class is a superclass of every other class?
         - Object
