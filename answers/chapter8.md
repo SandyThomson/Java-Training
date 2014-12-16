@@ -1,8 +1,8 @@
 
-  1. TODO
+  1. See IQDemo.java in the default package.
   
   2. A namespace is essentially a way of partitioning Java programs for access control and to avoid naming conflicts / collisions. 
-  This is managed by the package keyword, and classes in a package are kept in a directory structure with the same heirarchy.
+  This is managed by the package keyword, and classes in a package are kept in a directory structure with the same hierarchy.
   
   3. Packages are stored in file system directories.
   
@@ -12,7 +12,7 @@
   
   6. Erm, the feature of defining an interface, and then implementing it many times. Is this a trick question?
   
-  7. In theory, no limit to either. However in reality, a class can't implement more than 65535 interfaces (soure: SO)
+  7. In theory, no limit to either. However in reality, a class can't implement more than 65535 interfaces (source: SO)
   
   8. Interfaces can be extended by other interfaces
   
