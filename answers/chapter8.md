@@ -16,7 +16,7 @@
   
   8. Interfaces can be extended by other interfaces
   
-  9. TODO
+  9. See IVehicle.java
   
   10. Yes. They are constants, and have global access.
   
@@ -29,6 +29,6 @@
   14. It is possible to define a static method in an interface from Java 8 onwards. 
   This method can be accessed without a direct implementation of the interface, using something like ```java Interface.method();```
   
-  15. TODO
+  15. See IcharQ.java
   
   16. See my answer to Q14.

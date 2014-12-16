@@ -22,4 +22,11 @@ public interface IcharQ {
 	 */
 	char get();
 
+	// My answer for Q15
+	// This should 'empty' the queue (although in these implementations it's
+	// just moving the queue pointer).
+	default void reset() {
+		while (get() != (char) 0);
+	}
+
 }
