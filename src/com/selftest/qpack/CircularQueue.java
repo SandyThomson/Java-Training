@@ -11,7 +11,7 @@ public class CircularQueue<T> extends AbstractQueue<T> {
     }
 
     @Override
-    public Queue<T> put(T value) {
+    public Queue<T> put(T value) throws BufferOverflowException {
         if (putLoc == getLoc - 1 || putLoc - getLoc == queue.length)
             throw new BufferOverflowException();
         putLoc %= queue.length;
@@ -21,7 +21,7 @@ public class CircularQueue<T> extends AbstractQueue<T> {
     }
 
     @Override
-    public T get() {
+    public T get() throws BufferUnderflowException {
         if (getLoc == putLoc)
             throw new BufferUnderflowException();
         getLoc %= queue.length;

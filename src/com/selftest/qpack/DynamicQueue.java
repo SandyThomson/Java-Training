@@ -20,7 +20,7 @@ public class DynamicQueue<T> extends AbstractQueue<T> {
     }
 
     @Override
-    public T get() {
+    public T get() throws BufferUnderflowException {
         if (getLoc == putLoc)
             throw new BufferUnderflowException();
         return super.get();

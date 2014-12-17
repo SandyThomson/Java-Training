@@ -18,7 +18,7 @@ public class FixedQueue<T> extends AbstractQueue<T> {
     }
 
     @Override
-    public Queue<T> put(T value) {
+    public Queue<T> put(T value) throws BufferOverflowException {
         if (putLoc == queue.length)
             throw new BufferOverflowException();
         queue[putLoc++] = value;
@@ -26,7 +26,7 @@ public class FixedQueue<T> extends AbstractQueue<T> {
     }
 
     @Override
-    public T get() {
+    public T get() throws BufferUnderflowException {
         if (getLoc == putLoc)
             throw new BufferUnderflowException();
         return super.get();
