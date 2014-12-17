@@ -1,0 +1,32 @@
+1. See Code.
+
+2. A namespace is a declarative region. Using different namespaces avoids naming collisions.
+
+3. Packages are stored in directories.
+
+4. Protected memmbers are available to subclasses and within packages, default is only available within its package.
+
+5. To use a member of a package, either import the package/member or use the fully qualified name.
+
+6. Interfaces.
+
+7. One or more. One or more.
+
+8. Yes, interfaces can be extended. Any classes then implementing the extended interface must implement all methods required.
+
+9. See code
+
+10. Yes. by importing the interface.
+
+11. True
+
+12. java.lang
+
+13. Erm, default.
+
+14. Yes.
+
+15. The phrasing of the question makes me want to say declare a default method reset to the interface.
+
+16. InterfaceName.StaticMethodName();
+ 
