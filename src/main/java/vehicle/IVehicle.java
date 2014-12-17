@@ -1,7 +1,7 @@
 /**
  * 
  */
-package vehicle;
+package main.java.vehicle;
 
 /**
  * @author Mike

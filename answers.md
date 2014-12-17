@@ -2,7 +2,8 @@
 
 ### 1. Using the code from trythis 8.1 put the `ICharQ` interface and its three implementations into a package called `qpack`. Keeping the queue demonstration class `IQDemo` in the default package, show how to import and use the classes in qpack.
 
-[CircularQueue](src/main/java/CircularQueue.java), [DynQueue](src/main/java/DynQueue.java) and [FixedQueue](src/main/java/FixedQueue.java) need to change their class modifiers to `public`.
+[CircularQueue](src/main/java/qpack/CircularQueue.java), [DynQueue](src/main/java/qpack/DynQueue.java) and [FixedQueue](src/main/java/qpack/FixedQueue.java) need to change their class modifiers to `public`.
+
 [IQDemo](src/main/java/IQDemo.java) now needs to import the packages.
 
 ### 2. What is a namespace? Why is it important that java allows you to partition the namespace?
