@@ -1,0 +1,44 @@
+Chapter 7 self test answers
+
+ 1. A superclass does not have access to members of a subclass, but the subclass can access any non-private members of the superclass.
+
+ 2. class Circle extends TwoDShape{
+      Circle() {
+        super();
+      }
+
+      Circle( double d ) {
+        super( d, "circle" );
+      }
+
+      Circle( Circle c ) {
+        super( c );
+      }
+
+      double area() {
+        return 3.14159 * ( getWidth() / 2 ) * ( getWidth() / 2 );
+      }
+    }
+
+ 3. Prevent a subclass from accessing a superclass member by declaring it as private.
+
+ 4. super( params ); - calls the constructor of the superclass
+    super.membername; - access a member of the superclass
+
+ 5. Descending hierarchical order - Alpha, Beta, Gamma
+
+ 6. The type of the object being referred to determines which version of an overridden method is called.
+
+ 7. An abstract class is a class in which at least one abstract method - i.e. a method which has no implementation and must be overridden.
+
+ 8. The final modifier prevents a method from being overridden or a class from being inherited.
+
+ 9. Inheritance, method overriding and abstract classes support the "one interface, multiple methods" concept by allowing
+    us to create general class structure with a consistent interface that is shared by all subclasses.
+
+10. The Object class is a superclass of all other classes.
+
+11. True.
+
+12. The final keyword is used to create a named constant.
+
