@@ -35,4 +35,26 @@ This allows us to use multiple implementations in the same context, and allows u
 
 **Q8**: An interface can extend another interface, but classes cannot extend interfaces.
 
-**Q9**: 
+**Q9**: See **vehicle** package
+
+**Q10**: They can be accessed statically but not updated as they are constants.
+
+**Q11**: True
+
+**Q12**: java.lang is imported automatically
+
+**Q13**: default, i.e.:
+
+	default void doSomething();
+
+**Q14**: Yes, as of JDK 8, static methods can be defined in an interface.
+
+**Q15**: You would declare reset() as a default method, with some default functionality to be run if a class was not to implement it, so as not to break existing functionality.
+
+**Q16**: As follows:
+
+	static int getAStaticInt(){
+		return 2;
+	}
+	
+
