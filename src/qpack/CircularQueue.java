@@ -1,5 +1,7 @@
+package qpack;
+
 // A circular queue. 
-class CircularQueue implements ICharQ {
+public class CircularQueue implements ICharQ {
 	private char q[]; // this array holds the queue
 	private int putloc, getloc; // the put and get indices
 

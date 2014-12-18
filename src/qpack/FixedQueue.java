@@ -1,5 +1,7 @@
+package qpack;
+
 // A fixed-size queue class for characters.    
-class FixedQueue implements ICharQ {
+public class FixedQueue implements ICharQ {
 	private char q[]; // this array holds the queue
 	private int putloc, getloc; // the put and get indices
 

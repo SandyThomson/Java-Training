@@ -1,4 +1,6 @@
-class DynQueue implements ICharQ {
+package qpack;
+
+public class DynQueue implements ICharQ {
 	private char q[]; // this array holds the queue
 	private int putloc, getloc; // the put and get indices
 
