@@ -1,0 +1,38 @@
+1) See SantasLists.java etc.
+
+2) The namespace is a declarative region. By partitioning the namespace you can have multiple classes with different names so long as they are in different parts of the namespace.
+
+3) Packages are stored in the file system 
+
+4) Protected and default both allow all classes in the same package to access a variable/method, but protected additionally allows subclasses outside of the package to use the variable/method.
+
+5) Members can either be referenced directly or imported. For example:
+
+```java
+int answer1 = package.Member.getAnswer();
+
+import package.Member
+int answer2 = Member.getAnswer();
+```
+
+6) Interfaces best exmplify the tenet, as they can be used to define common methods that every implementation must implement.
+
+7) Any class can implement a method, and there is no limit on the number of interfaces a class can implement.
+
+8) Interfaces can be extended.
+
+9) See IVehicle.
+
+10) Interfaces in a interface can be shared with other parts of the program.
+
+11) True
+
+12) java.lang is automatically imported
+
+13) `default` is used to declare a `default` interface method
+
+14) It is possible to declare a static interface method as of Java 8.
+
+15) To add a new method to an interface without breaking existing implementations, a default implementation of the method must be supplied using the default keyword.
+
+16) A static interface method is called using the interface name i.e. `Interface.method()`
