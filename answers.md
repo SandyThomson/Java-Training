@@ -35,7 +35,7 @@ Queue<String> fixedQueue = new FixedQueue<String>( 10 );
  
  8) Yes using the **extends** keyword.
  
- 9) See [IVehicle.java](src/com/selftest/Vehicle/IVehicle.java)
+ 9) See [IVehicle.java](src/com/selftest/vehicle/IVehicle.java)
  
  10) Yes because they are also implicitly **public**.
  
