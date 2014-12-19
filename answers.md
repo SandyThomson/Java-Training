@@ -45,9 +45,11 @@ Queue<String> fixedQueue = new FixedQueue<String>( 10 );
  
  13) **default**.
  
- 14) See [Queue.java](src/com/selftest/qpack/Queue.java)
+ 14) Yes.
  
- 15) A **static** method is called by using the form:
+ 15) See [Queue.java](src/com/selftest/qpack/Queue.java)
+ 
+ 16) A **static** method is called by using the form:
  ```java
  MyInterface.method();
  ```
