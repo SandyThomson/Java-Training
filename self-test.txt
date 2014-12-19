@@ -1,0 +1,34 @@
+Chapter 8 self test
+
+  1. 
+ 
+  2. Namespaces prevent collisions between class names
+  
+  3. Packages are stored in directories
+  
+  4. Protected access allows access within the same package and subclasses in other packages.  Default access allows only access within the same package.
+  
+  5. Members of a package can be used by other packages by use of the import keyword, or specifying their fully qualified name.
+  
+  6. The ... interface?
+  
+  7. There is no limit to the number of classes which may implement an interface.  A class can implement any number of interfaces.
+  
+  8. Interfaces can be extended.
+  
+  9. See IVehicle.java
+  
+ 10. Variables declared in an interface can be shared with other parts of a program, but it's controversial, apparently.
+ 
+ 11. A package is essentially a container for classes.
+ 
+ 12. java.lang is imported automatically into a program.
+ 
+ 13. The default keyword is, surprisingly, used to declare a default interface method.
+ 
+ 14. It is possible to define a static method in an interface as of JDK 8.
+ 
+ 15. The reset() method can be added to the interface with a default implementation which throws an exception.  This ensure that existing code which implements the interface does not break,
+     and no preexisting code will be expecting reset() to exist and so will not see the error.
+ 
+ 16. InterfaceName.methodName
