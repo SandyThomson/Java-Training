@@ -1,0 +1,30 @@
+1. Throwable is at the top of the exception hierarchy.
+
+2. 'try' to do something, 'catch' any problems.
+
+3. There is no try block.
+
+4. Eventually, the exception will be passed to the JVM which will terminate.
+
+5. B will not be caught, as the superclass A block will match all subclasses.
+
+6. Yes, an exception can be thrown to an outer catch.
+
+7. False, finally blocks are only executed after a try/catch block, it doesn't necessarily terminate execution.
+
+8. All except RunTimeError exceptions.
+
+9. MyClass is not a subclass of Throwable or Exception, so can't be thrown.
+
+10. See code
+
+11. Exceptions can be thrown by
+    - the JVM,
+    - errors in code, or
+    - generated and thrown by code.
+
+12. Error and Exception or the direct subclasses of Throwable
+
+13. Multi catch allows you to specify an exception that caused an exception.
+
+14. No, typically you don't catch Errors
