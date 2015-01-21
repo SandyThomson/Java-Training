@@ -23,7 +23,7 @@ try ( BufferedInputStream is = new BufferedInputStream(new FileInputStream("myfi
   4) _Show how to open a file for reading characters._
 
 ```java
-try ( BufferedReader ir = new BufferedReader(new FileReader("myfile.txt)) ) {
+try ( BufferedReader ir = new BufferedReader(new FileReader("myfile.txt")) ) {
 
 }
 ```
@@ -31,7 +31,7 @@ try ( BufferedReader ir = new BufferedReader(new FileReader("myfile.txt)) ) {
 Or for lazily-evaluated line reading:
 
 ```java
-try ( Stream<String> in = Files.lines(Paths.get("src/org/java/training/Blargh.java")) ) {
+try ( Stream<String> in = Files.lines(Paths.get("src/org/java/training/SpacesToHyphens.java")) ) {
 	// Print out the imports
 	in.filter(s -> s.trim().startsWith("import")).forEach(System.out::println);
 }
@@ -67,14 +67,14 @@ double x = Double.parseDouble("123.23");
 ```
 
   7) _Write a program that copies a text file. In the process, have it convert all spaces
-  	  into hyphens. Use the byte stream file classes. Use the traditional approach to
-  	  closing a file by explicitly calling close._
+      into hyphens. Use the byte stream file classes. Use the traditional approach to
+      closing a file by explicitly calling close._
 
 [SpacesToHyphens.java](src/org/java/training/SpacesToHyphens.java).
 
   8) _Rewrite the program described in question 7 so that it uses the character stream
-  	  classes. This time, use the **try-with-resources** statement to automatically
-  	  close the file._
+      classes. This time, use the **try-with-resources** statement to automatically
+      close the file._
 
 [SpacesToHyphensMarkTwo.java](src/org/java/training/SpacesToHyphensMarkTwo.java).
 
@@ -91,11 +91,11 @@ An `InputStream`.
 
 For bytes, `InputStream`. For conversions to Java primitives, `DataInputStream`.
 
- 12) _`Reader` and `Writer` are at the top of the _______ class hierarchies._
+ 12) _`Reader` and `Writer` are at the top of the _______ _class hierarchies._
 
 Character stream.
 
- 13) _The **try-with-resources** statement is used for _____ _____ _____._
+ 13) _The **try-with-resources** statement is used for _____ _____ _____.
 
 The answer it wants is Automatic Resource Management, though the concept used is more
 specifically referred to (especially in the C++ realm) as Resource Acquisition is
