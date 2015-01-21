@@ -16,7 +16,7 @@ public class SpacesToHyphensMarkTwo {
 	
 	public static void copy(String a, String b) throws IOException {
 		try ( BufferedReader reader = new BufferedReader(new FileReader(a));
-			  BufferedWriter writer = new BufferedWriter(new FileWriter(b)) ) {
+		      BufferedWriter writer = new BufferedWriter(new FileWriter(b)) ) {
 
 			for ( String line = reader.readLine();
 			      line != null;
