@@ -19,8 +19,9 @@ public class SpacesToHyphensMarkTwo {
 			  BufferedWriter writer = new BufferedWriter(new FileWriter(b)) ) {
 
 			for ( String line = reader.readLine();
-				  line != null;
-				  writer.write(line.replace(' ', '-') + "\n"), line = reader.readLine() );
+			      line != null;
+			      writer.write(line.replace(' ', '-') + "\n"),
+			      line = reader.readLine() );
 		} catch(IOException e) {
 			System.err.printf("Failed to copy [%s] into [%s]", a, b);
 		}
