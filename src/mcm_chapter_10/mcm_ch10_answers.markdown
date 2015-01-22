@@ -10,12 +10,15 @@ this purpose?**
 Because the first version of Java only had Byte streams and the System.in() and System.out() is byte stream based, although character streams can also be used.
 
 **3. Show how to open a file for reading bytes.**
+
 See [OpenByteFileDemo.java](io/OpenByteFileDemo.java)
 
 **4. Show how to open a file for reading characters.**
+
 See [OpenCharacterFileDemo.java](io/OpenCharacterFileDemo.java)
 
 **5. Show how to open a file for random-access I/O.**
+
 Use the RandomAccessFile Object to open the file and the seek() operator to go to a location
 
 
@@ -27,6 +30,7 @@ Use the RandomAccessFile Object to open the file and the seek() operator to go t
 ```
 
 **6. How can you convert a numeric string such as "123.23" into its binary equivalent?**
+
 There are a number of ways of converting a string number into binary (e.g., see [ConvertStringToBinary.java](io/ConvertStringToBinary.java), however easier ways are to use the Integer Parsing methods e.g.,
 
 ```java
@@ -42,20 +46,25 @@ See [OpenByteFileConvertSpacesToHyphens.java](io/OpenByteFileConvertSpacesToHyph
 See [CopyOfOpenCharacterConvertSpacesToHyphens.java](io/CopyOfOpenCharacterConvertSpacesToHyphens.java)
 
 **9. What type of stream is System.in?**
+
 An inputstream
 
 **10. What does the read( ) method of InputStream return when the end of the stream is
 reached?**
+
 a value of -1
 
 **11. What type of stream is used to read binary data?**
+
 DataInputStream (see java solutions above)
 
 **12. Reader and Writer are at the top of the ____________ class hierarchies**
 Character Stream I/O
 
 **13. The try-with-resources statement is used for ___________ ____________ ____________.**
+
 Automatic Resource Management
 
 **14. If you are using the traditional method of closing a file, then closing a file within a finally block is generally a good approach. True or False?**
+
 True - means it will always close, even if an exception has been thrown.
