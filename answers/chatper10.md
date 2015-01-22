@@ -30,7 +30,7 @@ Through use of the parsing methods in their type wrappers e.g. Integer.parseInt 
 
 8) _Rewrite the program described in question 7 so that it uses the character stream classes. This time, use the **try-with-resources** statement to automatically close the file._
 
-[SpacesToHyphensMarkTwo.java](src/SpacesToHyphens2.java).
+[SpacesToHyphens2.java](src/SpacesToHyphens2.java).
 
 9) _What type of stream is `System.in`?_
 
