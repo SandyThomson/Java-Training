@@ -42,6 +42,7 @@ Adding the synchronised keyword to a method means that it is effectively locked 
 
 
 **7. The wait( ) and notify( ) methods are used to perform _______________________.**
+
 Thread communication.
 
 
@@ -64,4 +65,6 @@ The isAlive() method returns a boolean indicating whether or not a thread is run
 
 
 **12. On your own, try adding synchronization to the Queue class developed in previous chapters so that it is safe for multithreaded use.**
+
+See [ThreadSafeQueueDemo.java](ThreadSafeQueueDemo.java)
 
