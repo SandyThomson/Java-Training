@@ -1,0 +1,23 @@
+1. Multithreading enables more efficient programs by allowing you to write blocks of code that can run kind-of-at-the-same-time taking advantage of blockers such as IO or multiple cores/processors
+
+2. Multithreading is supported by the Thread class and the Runnable interface.
+
+3. You might want to extend Thread rather than implementing Runnable to override methods other than run()
+
+4. MyThrd.join();
+
+5. MyThrd.setPriority(Thread.NORM_PRIORITY+3);
+
+6. Adding synchronised to a method means that only one thread can call that method at a time.
+
+7. The wait() and notify() methods are used to perform thread communication.
+
+8. See code
+
+9. You can't use suspend(), resume() and stop() as they have been deprecated since Java 2
+
+10. getName()
+
+11. isAlive returns a boolean.
+
+12. See code
