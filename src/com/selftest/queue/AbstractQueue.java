@@ -19,20 +19,7 @@ public abstract class AbstractQueue<T> implements Queue<T> {
 
 	@Override
 	public synchronized Iterator<T> iterator() {
-		return new Iterator<T>() {
-
-			int position = 0;
-
-			@Override
-			public boolean hasNext() {
-				return position < queue.length;
-			}
-
-			@Override
-			public T next() {
-				return queue[position++];
-			}
-		};
+		return Arrays.asList( queue ).iterator();
 	}
 
 	@Override

@@ -35,7 +35,7 @@ public class Clock {
 
 			notify();
 			try {
-				while ( state != (s == State.TICKED ? State.TOCKED : State.TICKED) )
+				while ( state == s )
 					wait();
 			}
 			catch ( InterruptedException e ) {
