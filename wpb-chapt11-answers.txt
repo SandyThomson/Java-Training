@@ -1,7 +1,7 @@
 Chapter 11 Self Test
 
   1.  How does Java’s multithreading capability enable you to write more efficient programs?
-      - By allowing you to organise your programe so that tasks can be run concurrently.
+      - By allowing you to organise your programme so that tasks can be run concurrently.
 
 
   2.  Multithreading is supported by the _________ class and the ________ interface.  i
@@ -9,7 +9,7 @@ Chapter 11 Self Test
 
 
   3.  When creating a runnable object, why might you want to extend Thread rather than implement Runnable?
-      - By implementing Runnable, you allow your program to implement more.....
+      - By implementing Runnable, you allow your thread to start themselves
 
 
   4.  Show how to use join( ) to wait for a thread object called MyThrd to end.
@@ -25,11 +25,11 @@ Chapter 11 Self Test
 
 
   7.  The wait( ) and notify( ) methods are used to perform _______________________.
-      - interthread communications
+      - inter-thread communications
 
 
   8.  Change the TickTock class so that it actually keeps time. That is, have each tick take one half second, and each tock take one half second. Thus, each tick-tock will take one second.  (Don’t worry about the time it takes to switch tasks, etc.)
-      - See [........]
+      - See [src/TickTock/TickTock.java][TickTock.java]
 
 
   9.  Why can’t you use suspend( ), resume( ), and stop( ) for new programs?
