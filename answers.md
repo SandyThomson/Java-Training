@@ -14,15 +14,15 @@
 	
 4)
 
-	````java
-	  MyThrd.join();
-	````
+```java
+MyThrd.join();
+```
 	
 5)
 
-	````java
-	  MyThrd.setPriority(Thread.NORM_PRIORITY+3);
-	````	
+```java
+MyThrd.setPriority(Thread.NORM_PRIORITY+3);
+```	
 	
 6)
 
@@ -34,7 +34,7 @@
 	
 8)
 
-	See [TickTockDemo.java](TicTockDemo.java)
+See [TickTockDemo.java](TicTockDemo.java)
 
 9)
 
@@ -50,4 +50,4 @@
 	
 12)
 	
-	See [QueueDemo.java](QueueDemo.java)
+See [QueueDemo.java](QueueDemo.java)
