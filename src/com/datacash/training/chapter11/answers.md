@@ -24,7 +24,7 @@ MyThrd.setPriority( Thread.NORM_PRIORITY + 3 );
 
 8) See Question8.java
 
-9)`suspend()`, `stop()` and `resume()` cannot be used because
+9)`suspend()`, `stop()` and `resume()` cannot be used because they have the potential to cause deadlock in a program.
 
 10) `getName()`
 
