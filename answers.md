@@ -34,7 +34,7 @@ MyThrd.setPriority(Thread.NORM_PRIORITY+3);
 	
 8)
 
-See [TickTockDemo.java](src/TicTockDemo.java)
+See [TickTockDemo.java](src/TickTockDemo.java)
 
 9)
 
