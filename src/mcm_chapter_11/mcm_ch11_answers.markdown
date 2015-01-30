@@ -1,6 +1,6 @@
 # MCM Chapter11 Answers
 
-** 1. How does Java’s multithreading capability enable you to write more efficient programs?**
+**1. How does Java’s multithreading capability enable you to write more efficient programs?**
 
 Java's multithreading capability enables us to write more efficent programs by allowing functionality within a thread to be run concurrently, meaning that while one task is running, another can also be running side by side. This allows for more efficient, and more responsive code. Efficiency depends on the hardware available, number of CPUs, and the way that the OS handles multitasking.
 
