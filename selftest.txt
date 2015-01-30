@@ -4,7 +4,7 @@ It allows a program to execute multiple actions in parallel, using CPU time whic
 
 2. Multithreading is supported by the _________ class and the ________ interface.
 
-Thread and runnable
+Thread and Runnable
 
 3. When creating a runnable object, why might you want to extend Thread rather than implement Runnable?
 
