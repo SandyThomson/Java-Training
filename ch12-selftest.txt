@@ -1,0 +1,69 @@
+Chapter 12 Self Test.
+
+1. Enumeration constants are said to be self-typed. What does this mean?
+
+Enumeration constants are objects of the same type as the enumeration
+
+2. What class do all enumerations automatically inherit?
+
+Java.Lang.Enum
+
+3. Given the following enumeration, write a program that uses values( ) to show a list of the constants and their ordinal values.
+		enum Tools {
+			SCREWDRIVER, WRENCH, HAMMER, PLIERS
+		}
+
+class listEnum {
+	public static void main( String[] args ) {
+		for ( Tools t : Tools.values() ) {
+			System.out.println( "Constant: " + d + "; Ordinal: " + d.ordinal();
+		}
+	}
+}
+
+4. The traffic light simulation developed in Try This 12-1 can be improved with a few simple changes that take advantage 
+   of an enumeration’s class features. In the version shown, the duration of each color was controlled by the TrafficLightSimulator
+   class by hard-coding these values into the run( ) method. Change this so that the duration of each color is stored by the constants
+   in the TrafficLightColor enumeration. To do this, you will need to add a constructor, a private instance variable, and a method
+   called getDelay( ). After making these changes, what improvements do you see? On your own, can you think of other improvements?
+   (Hint: Try using ordinal values to switch light colors rather than relying on a switch statement.)
+
+See TrafficLights.java
+
+5. Define boxing and unboxing. How does autoboxing/unboxing affect these actions?
+
+Boxing is the process of wrapping a primitive value in an object.  Unboxing is the process of retrieving a
+primitive value from the wrapper object.  Autoboxing eliminates the need to manually contruct the wrapper object
+ and autounboxing eliminates the need to call a method to retrieve the value from a type wrapper.
+
+6. Change the following fragment so that it uses autoboxing.
+		Short val = new Short(123);
+
+Short val = 123;
+
+7. In your own words, what does static import do?
+
+Brings the static members of a class into the current namespace.  They do not need to be referred to by
+their fully qualified class path.
+
+8. What does this statement do?
+		import static java.lang.Integer.parseInt;
+
+This brings parseInt() into the current namespace.
+
+9. Is static import designed for special-case situations, or is it good practice to bring all static members of all classes into view?
+
+It is not best practice to bring all static members of classes into view as this risks namespace collisions and generally poorly
+structured code.
+
+10. An annotation is syntactically based on a/an ________________ .
+
+Interface
+
+11. What is a marker annotation?
+
+An annotation that has no parameters - essentially flags an attribute.
+
+12. An annotation can be applied only to methods. True or False?
+
+False - any declaration can have an annotation.
