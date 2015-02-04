@@ -29,7 +29,7 @@ int i = parseInt("123");
 
 9) Static import should only be used for special-case situations, as bringing in too many static imports can fill up the namespace with method names and make it very ambiguous what any given method call is actually doing.
 
-10) An annotation is syntacically based upon an
+10) An annotation is syntacically based upon an interface.
 
 11)A marker annotation is an annotation without any parameters that is used to flag an item as having some attribute, i.e. `@Override`
 
