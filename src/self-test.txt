@@ -2,9 +2,9 @@
 
 2. Enumerations automatically inherit java.lang.Enum
 
-3. See code
+3. See EnumOrdinals.java
 
-4. See code
+4. See TrafficLightSimulator.java
 
 5. Boxing is storing a primitive in a wrapper. Unboxing is getting a primitive from a wrapper.
    Autoboxing/unboxing does this automatically.

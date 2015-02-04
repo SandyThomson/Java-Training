@@ -1,4 +1,4 @@
-//An enumeration of Transport varieties. 
+// An enumeration of Tool varieties.
 enum Tools {  
 	SCREWDRIVER, WRENCH, HAMMER, PLIERS
 } 
