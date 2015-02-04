@@ -1,0 +1,66 @@
+Chapter 12 Self Test
+
+  1.  Enumeration constants are said to be self-typed. What does this mean?
+      - "The emun is a new type that you're creating"
+
+
+  2.  What class do all enumerations automatically inherit? 
+      - "java.lang.Enum"
+
+
+  3.  Given the following enumeration, write a program that uses values( ) to show a list of the constants and their ordinal values.
+      enum Tools {
+        SCREWDRIVER, WRENCH, HAMMER, PLIERS
+      }
+      - "See [[enumTest/EnumTest.java]]"
+
+
+  4.  The traffic light simulation developed in Try This 12-1 can be improved with a 
+      few simple changes that take advantage of an enumeration’s class features. In 
+      the version shown, the duration of each color was controlled by the 
+      TrafficLightSimulator class by hard-coding these values into the run( ) method. 
+      Change this so that the duration of each color is stored by the constants in the 
+      TrafficLightColor enumeration. To do this, you will need to add a constructor, a 
+      private instance variable, and a method called getDelay( ). After making these 
+      changes, what improvements do you see? On your own, can you think of other 
+      improvements? (Hint: Try using ordinal values to switch light colors rather than 
+      relying on a switch statement.)
+      - "See [[trafficLights/TrafficLightSimulation.java]]"
+
+
+  5.  Define boxing and unboxing. How does autoboxing/unboxing affect these actions?
+      - "Convert values between the primative types and their Object equivelent."
+      - "It does it automatically, ie you don't have to call the convert method explicitly." 
+
+
+  6.  Change the following fragment so that it uses autoboxing.
+      Short val = new Short(123);
+      - "Short val = 123;"
+
+
+  7.  In your own words, what does static import do?
+      - "Updates the namespace of your package to include a static method from a different package."
+
+
+  8.  What does this statement do?
+      import static java.lang.Integer.parseInt;
+      - "Adds 'Integer.parseInt' to the namespace of the current class, so that you may call 'parseInt' without explicitly referencing 'Integer'."
+
+
+  9.  Is static import designed for special-case situations, or is it good practice to bring all static members of all classes into view?
+      - "Special situations only."
+
+
+  10.   An annotation is syntactically based on a/an ________________ .
+      - "A method defenition."
+
+
+  11.   What is a marker annotation?
+      - "An annotation that doesn't have parameters."
+
+
+  12.   An annotation can be applied only to methods. True or False?
+      - "False."
+
+
+
