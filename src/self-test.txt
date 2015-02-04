@@ -1,0 +1,25 @@
+1. It means the enumeration constants are of the type of the enumeration being defined.
+
+2. Enumerations automatically inherit java.lang.Enum
+
+3. See EnumOrdinals.java
+
+4. See TrafficLightSimulator.java
+
+5. Boxing is storing a primitive in a wrapper. Unboxing is getting a primitive from a wrapper.
+   Autoboxing/unboxing does this automatically.
+
+6. Short val = 123;
+
+7. Static import bring static methods from other packages into your namespace so you don't have
+   to fully declare them.
+
+8. It brings parseInt into the global namespace.
+
+9. Static import is for special cases, as we do not want to over-pollute the namespace.
+
+10. An annotation is syntactically based on an interface
+
+11. A marker annotation is one that takes no arguments.
+
+12. False
