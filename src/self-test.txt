@@ -1,4 +1,4 @@
-1. 
+1. It means the enumeration constants are of the type of the enumeration being defined.
 
 2. Enumerations automatically inherit java.lang.Enum
 
@@ -6,11 +6,13 @@
 
 4. See code
 
-5. Boxing is storing a primitive in a wrapper. Unboxing is getting a primitive from a wrapper. Autoboxing/unboxing does this automatically.
+5. Boxing is storing a primitive in a wrapper. Unboxing is getting a primitive from a wrapper.
+   Autoboxing/unboxing does this automatically.
 
 6. Short val = 123;
 
-7. Static import bring static methods from other packages into your namespace so you don't have to fully declare them.
+7. Static import bring static methods from other packages into your namespace so you don't have
+   to fully declare them.
 
 8. It brings parseInt into the global namespace.
 
