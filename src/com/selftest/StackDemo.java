@@ -18,8 +18,8 @@ public class StackDemo {
 		}
 		catch ( StackFullException e ) {
 			System.out.printf( "%s: [%s]%n",
-											   e.getMessage(),
-											   stack.stream().map( c -> c.toString() ).collect( Collectors.joining( "," ) ) );
+			    							 e.getMessage(),
+			    							 stack.stream().map( c -> c.toString() ).collect( Collectors.joining( "," ) ) );
 		}
 
 		try {
@@ -28,8 +28,8 @@ public class StackDemo {
 		}
 		catch ( StackEmptyException e ) {
 			System.out.printf( "%s: [%s]%n",
-										     e.getMessage(),
-										     stack.stream().map( c -> c.toString() ).collect( Collectors.joining( "," ) ) );
+			    							 e.getMessage(),
+			    							 stack.stream().map( c -> c.toString() ).collect( Collectors.joining( "," ) ) );
 		}
 	}
 
