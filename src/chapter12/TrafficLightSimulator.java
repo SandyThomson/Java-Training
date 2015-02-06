@@ -2,7 +2,21 @@ package chapter12;
 
 
 enum TrafficLightColor {
-	RED, GREEN, YELLOW
+	RED (1200), GREEN (1000), YELLOW (2000);
+
+	private int delay = 0;
+
+	TrafficLightColor( int duration ) {
+		this.delay = duration;
+	}
+
+	public int getDelay() {
+		return delay;
+	}
+
+	public TrafficLightColor getNext() {
+		return values()[(ordinal() + 1) % values().length];
+	}
 }
 
 // A computerized traffic light. 
@@ -31,17 +45,7 @@ class TrafficLightSimulator implements Runnable {
 	public void run() {
 		while ( !stop ) {
 			try {
-				switch ( tlc ) {
-					case GREEN:
-						Thread.sleep( 10000 ); // green for 10 seconds 
-						break;
-					case YELLOW:
-						Thread.sleep( 2000 ); // yellow for 2 seconds 
-						break;
-					case RED:
-						Thread.sleep( 12000 ); // red for 12 seconds 
-						break;
-				}
+				Thread.sleep( tlc.getDelay() );
 			}
 			catch ( InterruptedException exc ) {
 				System.out.println( exc );
@@ -52,17 +56,7 @@ class TrafficLightSimulator implements Runnable {
 
 	// Change color. 
 	synchronized void changeColor() {
-		switch ( tlc ) {
-			case RED:
-				tlc = TrafficLightColor.GREEN;
-				break;
-			case YELLOW:
-				tlc = TrafficLightColor.RED;
-				break;
-			case GREEN:
-				tlc = TrafficLightColor.YELLOW;
-		}
-
+		tlc = tlc.getNext();
 		changed = true;
 		notify(); // signal that the light has changed 
 	}
