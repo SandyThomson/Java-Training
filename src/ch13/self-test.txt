@@ -1,0 +1,32 @@
+1. D all of the above
+
+2. No, primitives cannot be used as a type argument
+
+3. class FlightSched<T, V> {
+   }
+
+4. class FlightSched<T, V extends Thread> {
+   }
+
+5. class FlightSched<T, V extends T> {
+   }
+
+6. ? is the wildcard argument
+
+7. Yes, the wildcard argument can be bounded
+
+8. <T> T MyGen(T o) {
+   }
+
+9. class MyClass<T, V extends T> implements IGenIF<T, V> {
+   }
+
+10. Counter obj = new Counter();
+
+11. No, types parameters do not exist at run time.
+
+12. See Code
+
+13. <> is the diamond operator, used for Type Inference
+
+14. MyClass<Double, String> obj = new MyClass<>(1.1, "Hi");
