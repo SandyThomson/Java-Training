@@ -10,6 +10,7 @@ public class Stack<T> implements IGenStack<T> {
 		stack = input;
 	}
 
+	@Override
 	public void push( T toPush ) throws ArrayFullException {
 		if ( pointer == stack.length ) {
 			throw new ArrayFullException( "Stack overflow!" );
@@ -19,6 +20,7 @@ public class Stack<T> implements IGenStack<T> {
 
 	}
 
+	@Override
 	public T pop() throws ArrayEmptyException {
 		if ( pointer == 0 ) {
 			throw new ArrayEmptyException( "Stack underflow! Is that even a thing?" );
