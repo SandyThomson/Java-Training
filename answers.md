@@ -75,7 +75,7 @@ Nope, unfortunately the book spoiled the magic... they are all compiled into cas
 
 ## 12. Convert your solution to question 10. of the self test for chapter 9 so thay it is generic. In the process, create a stack interface called **IGenStack** that generically defines the operations **push()** and **pop()**.
 
-Please see #104
+Please see [#104](#104)
 
 ## 13. What is **<>**?
 
