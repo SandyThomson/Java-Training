@@ -1,3 +1,6 @@
+package chapter9;
+
+
 // A stack class for characters.  
 class Stack {
 	private char stck[]; // this array holds the stack

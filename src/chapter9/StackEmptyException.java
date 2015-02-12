@@ -1,3 +1,5 @@
+package chapter9;
+
 public class StackEmptyException extends Throwable {
 
 	/**

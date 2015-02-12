@@ -1,3 +1,6 @@
+package chapter9;
+
+
 // Demonstrate the Stack class.  
 class SDemo {
 	public static void main(String args[]) {
