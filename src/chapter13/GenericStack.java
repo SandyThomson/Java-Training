@@ -4,29 +4,14 @@ import chapter9.StackEmptyException;
 import chapter9.StackFullException;
 
 // A stack class for characters.  
-class GenericStack {
-	private char stck[]; // this array holds the stack
+class GenericStack<T> {
+
+	private T[] stck; // this array holds the stack
 	private int tos; // top of stack
 
-	// Construct an empty Stack given its size.
-	GenericStack(int size) {
-		stck = new char[size]; // allocate memory for stack
-		tos = 0;
-	}
-
-	// Construct a Stack from a Stack.
-	GenericStack(GenericStack ob) {
-		tos = ob.tos;
-		stck = new char[ob.stck.length];
-
-		// copy elements
-		for (int i = 0; i < tos; i++)
-			stck[i] = ob.stck[i];
-	}
-
 	// Construct a stack with initial values.
-	GenericStack(char a[]) throws StackFullException {
-		stck = new char[a.length];
+	GenericStack( T[] a ) throws StackFullException {
+		stck = a;
 
 		for (int i = 0; i < a.length; i++) {
 			push(a[i]);
@@ -34,17 +19,17 @@ class GenericStack {
 	}
 
 	// Push characters onto the stack.
-	void push(char ch) throws StackFullException {
+	void push( T x ) throws StackFullException {
 		if (tos == stck.length) {
 			throw new StackFullException();
 		}
 
-		stck[tos] = ch;
+		stck[tos] = x;
 		tos++;
 	}
 
 	// Pop a character from the stack.
-	char pop() throws StackEmptyException {
+	T pop() throws StackEmptyException {
 		if (tos == 0) {
 			throw new StackEmptyException();
 		}
