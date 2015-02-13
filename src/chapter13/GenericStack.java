@@ -1,26 +1,25 @@
+
 package chapter13;
 
 import chapter9.StackEmptyException;
 import chapter9.StackFullException;
 
-// A stack class for characters.  
-class GenericStack<T> {
+// A stack class for characters.
+class GenericStack<T> implements Stack<T> {
 
 	private T[] stck; // this array holds the stack
 	private int tos; // top of stack
 
 	// Construct a stack with initial values.
-	GenericStack( T[] a ) throws StackFullException {
+	GenericStack( T[] a ) {
 		stck = a;
-
-		for (int i = 0; i < a.length; i++) {
-			push(a[i]);
-		}
+		tos = stck.length;
 	}
 
 	// Push characters onto the stack.
-	void push( T x ) throws StackFullException {
-		if (tos == stck.length) {
+	@Override
+	public void push( T x ) throws StackFullException {
+		if ( tos == stck.length ) {
 			throw new StackFullException();
 		}
 
@@ -29,8 +28,9 @@ class GenericStack<T> {
 	}
 
 	// Pop a character from the stack.
-	T pop() throws StackEmptyException {
-		if (tos == 0) {
+	@Override
+	public T pop() throws StackEmptyException {
+		if ( tos == 0 ) {
 			throw new StackEmptyException();
 		}
 

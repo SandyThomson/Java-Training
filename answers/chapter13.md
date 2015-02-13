@@ -50,6 +50,10 @@ See [GenericStack](../src/chapter13/GenericStack.java)
 
 13) _What is **<>**?_
 
+The diamond operator, used to specify the type in generics
+
 14) _How can the following be simplified?_
 
 `MyClass<Double,String> obj = new MyClass<Double,String>(1.1,"Hi");`
+
+`MyClass<Double,String> obj = new MyClass<>(1.1,"Hi");`
