@@ -20,9 +20,9 @@ class LambdaDemo {
       String result = ""; 
       
       for ( char c : str.toCharArray() )
-      	if (c != ' ') {
+        if (c != ' ') {
           result += c;
-      	}
+        }
  
       return result; 
     }; 

@@ -1,7 +1,7 @@
 package Chapter14;
 
 public class MethodRefDemo2 {
-	
+  
   public static void main(String args[]) 
   { 
     boolean result; 

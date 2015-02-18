@@ -14,19 +14,19 @@ public class MyIntNum {
   } 
   
   boolean hasCommonFactor( int n ) {
-  	
-  	int limit = ( v <= n ? v : n ) / 2;
-  	
-  	if ( limit >= 2 ) {
-  	
+    
+    int limit = ( v <= n ? v : n ) / 2;
+    
+    if ( limit >= 2 ) {
+    
       for ( int i = 2; i < limit; i++ ) {
         if (isFactor(i) && (n % i == 0) ) {
-        	return true;
+          return true;
         }
       }
-  	}
-  	
-  	return false;
-  	
+    }
+    
+    return false;
+    
   }
 }

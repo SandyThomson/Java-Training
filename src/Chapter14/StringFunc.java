@@ -2,5 +2,5 @@ package Chapter14;
 
 
 public interface StringFunc {
-	String func( String str );
+  String func( String str );
 }
