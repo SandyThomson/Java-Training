@@ -1,0 +1,44 @@
+<!--# if
+
+<pre>
+if ( condition ) statement;
+else statement;
+</pre>
+
+<!--# switch
+
+<pre><code>
+switch( expression ) {
+case constant:
+  statement sequence
+  break;
+  //...
+}
+</code></pre>
+
+<!--# for
+
+<pre>
+for( init; condition; iteration )
+	statement;
+</pre>
+
+<!--# while
+
+<code>while( condition ) statement;</code>
+
+<!--# do
+
+<pre>
+do {
+	statement;
+} while ( condition );
+</pre>
+
+<!--# break
+
+<code>break; or break label;</code>
+
+<!--# continue
+
+<code>continue; or continue label;</code>
