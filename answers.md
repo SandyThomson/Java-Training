@@ -88,7 +88,7 @@ See [FileLocComparison.java](src/org/java/training/FileLocComparison.java).
 See [ListDemoPlusPlus](src/org/java/training/ListDemoPlusPlus.java).
 
  19) _Bonus challenge: Convert the help class developed in Try This 4-1 into a Swing-based GUI
-      program. Display the keywords (`for`, `while`, `switch`_, and so on) in a `JList`.
+      program. Display the keywords (`for`, `while`, `switch`, and so on) in a `JList`.
       When the user selects one, display the keyword's syntax. To display multiple lines of
       text within a label, you can use HTML. When doing so, you must begin the text with the
       sequence `<html>`. When this is done, the text is automatically formatted as described
