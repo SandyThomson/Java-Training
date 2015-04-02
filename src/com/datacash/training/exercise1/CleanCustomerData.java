@@ -43,7 +43,6 @@ public class CleanCustomerData {
 	public static void main( String[] args ) {
 
 		String inputLine;
-		List<String> outputLines = new ArrayList<String>();
 
 		try (BufferedReader reader = new BufferedReader( new FileReader( args[0] ) );
 		    BufferedWriter writer = new BufferedWriter( new FileWriter( args[1] ) );) {
@@ -51,11 +50,7 @@ public class CleanCustomerData {
 			System.out.println( "Processing file " + args[0] );
 
 			while ( (inputLine = reader.readLine()) != null ) {
-				outputLines.add( cleanRow( inputLine ) );
-			}
-
-			for ( String outputLine : outputLines ) {
-				writer.write( outputLine );
+				writer.write( cleanRow( inputLine ) );
 				writer.newLine();
 			}
 
