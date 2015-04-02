@@ -26,4 +26,12 @@ public interface FileObfuscator {
 	 */
 	public String obfuscate( String filename );
 
+	/**
+	 * Save the file to a specified location
+	 * 
+	 * @param filename
+	 */
+	public void saveObfuscatedFile( String filename );
+
+
 }
