@@ -1,16 +1,16 @@
 
 package com.datacash.training.exercise1;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.UnaryOperator;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -42,18 +42,12 @@ public class CleanCustomerData {
 
 	public static void main( String[] args ) {
 
-		String inputLine;
-
-		try (BufferedReader reader = new BufferedReader( new FileReader( args[0] ) );
-		    BufferedWriter writer = new BufferedWriter( new FileWriter( args[1] ) );) {
+		try (Stream<String> reader = Files.lines( Paths.get( args[0] ) );) {
 
 			System.out.println( "Processing file " + args[0] );
 
-			while ( (inputLine = reader.readLine()) != null ) {
-				writer.write( cleanRow( inputLine ) );
-				writer.newLine();
-			}
-
+			Files.write( Paths.get( args[1] ), reader.map( CleanCustomerData::cleanRow ).collect( Collectors.toList() ) );
+			
 			System.out.println( "Successfully output file to " + args[1] );
 
 		}
