@@ -1,6 +1,2 @@
-/bin/
-.classpath
-.metadata/*
-.project
-RemoteSystemsTempFiles
-*.class
+.settings
+/target/
