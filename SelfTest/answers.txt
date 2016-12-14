@@ -1,0 +1,24 @@
+1.  Java preserves range and behaviour of primitive types to ensure portability on all execution environments.
+
+2.  The character type in Java is Unicode (unsigned 16-bit type) rather than an 8-bit type as in other programming languages.
+
+3.  False.  A boolean type is restricted to either true or false which are reserved words.
+
+4.  System.out.println( "One\nTwo\nThree" );
+
+5.  The variable 'i' is not declared, the variable 'sum' is not initialised before it's value is used and the 'println' statement is trying to use the 'sum' variable outside of it's scope.
+
+6.  The prefix form of the increment operator increments the value before returning the operand's value.  The postfix form increments the value after returning the operand's value.
+
+7.  if ( x != 0 && value / x > 1 )
+    {...}
+    
+8.  They are both promoted to the 'int' type.
+
+9.  A cast is required when automatic type conversion between two types would result in a loss of information (e.g. double to int).
+
+10.  See code.
+
+11.  No. 
+
+12.  Yes.  
